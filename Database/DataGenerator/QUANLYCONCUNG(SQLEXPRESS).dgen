@@ -6,7 +6,7 @@
     <ProviderVersion>5.8.127.0</ProviderVersion>
     <GeneratorVersion>6.1.1225.0</GeneratorVersion>
     <Provider>aa8afe9c-7d62-4564-b477-c12e62e0f440</Provider>
-    <ConnectionString>Data Source=LAPTOP-KTF30DB7\SQLEXPRESS;Encrypt=False;Integrated Security=True;User ID=LAPTOP-KTF30DB7\AN515-52</ConnectionString>
+    <ConnectionString>Data Source=KAYDEE\SQLEXPRESS;Encrypt=False;Initial Catalog=QUANLYCONCUNG;Integrated Security=True;User ID=KAYDEE\Admin</ConnectionString>
     <CategoryId>00000000-0000-0000-0000-000000000000</CategoryId>
     <DatabaseName>QUANLYCONCUNG</DatabaseName>
     <AllowNulls>true</AllowNulls>
@@ -375,7 +375,7 @@
             <SeedValue>62</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\thuong_hieu.txt")|Tổng bill</Expression>
+            <Expression>($"D:\HCMUS\CSDL_Adv\DoAn\ThucHanh\DA-2_CSDLNC_\Database\DataGenerator\thuong_hieu.txt")|Tổng bill</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -394,7 +394,7 @@
             <SeedValue>61</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
+            <Expression>($"D:\HCMUS\CSDL_Adv\DoAn\ThucHanh\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -429,7 +429,7 @@
           <Checked>true</Checked>
           <DataType>datetime</DataType>
           <GeneratorOptions xsi:type="DateTimeGeneratorOptions">
-            <AllowNulls>true</AllowNulls>
+            <AllowNulls>false</AllowNulls>
             <NullProportion>10</NullProportion>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
@@ -443,7 +443,7 @@
             <UseOffsetDetails>false</UseOffsetDetails>
             <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
             <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
-            <MinDate>1970-01-01T00:00:00</MinDate>
+            <MinDate>2011-12-01T00:00:00+07:00</MinDate>
             <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
             <IsRandomizeDate>true</IsRandomizeDate>
             <IsRandomizeTime>true</IsRandomizeTime>
@@ -466,8 +466,8 @@
           <Checked>true</Checked>
           <DataType>datetime</DataType>
           <GeneratorOptions xsi:type="DateTimeGeneratorOptions">
-            <AllowNulls>true</AllowNulls>
-            <NullProportion>10</NullProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>60</NullProportion>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
             <UseDefault>false</UseDefault>
@@ -476,10 +476,11 @@
             <SequentialValueTicks>864000000000</SequentialValueTicks>
             <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
             <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
-            <DateTimeRange>MinMaxDate</DateTimeRange>
-            <UseOffsetDetails>false</UseOffsetDetails>
+            <DateTimeRange>OffsetFromColumn</DateTimeRange>
+            <SelectedColumn>TG_BAT_DAU</SelectedColumn>
+            <UseOffsetDetails>true</UseOffsetDetails>
             <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
-            <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
+            <OffsetFromColumnMaxDays>30</OffsetFromColumnMaxDays>
             <MinDate>1970-01-01T00:00:00</MinDate>
             <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
             <IsRandomizeDate>true</IsRandomizeDate>
@@ -1139,7 +1140,7 @@
             <UseOffsetDetails>false</UseOffsetDetails>
             <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
             <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
-            <MinDate>2016-01-01T00:00:00</MinDate>
+            <MinDate>2011-01-01T00:00:00+07:00</MinDate>
             <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
             <IsRandomizeDate>true</IsRandomizeDate>
           </GeneratorOptions>
@@ -1154,7 +1155,7 @@
           <DataType>date</DataType>
           <GeneratorOptions xsi:type="DateGeneratorOptions">
             <AllowNulls>true</AllowNulls>
-            <NullProportion>90</NullProportion>
+            <NullProportion>85</NullProportion>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
             <UseDefault>false</UseDefault>
@@ -1163,10 +1164,11 @@
             <SequentialValueTicks>864000000000</SequentialValueTicks>
             <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
             <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
-            <DateTimeRange>MinMaxDate</DateTimeRange>
-            <UseOffsetDetails>false</UseOffsetDetails>
+            <DateTimeRange>OffsetFromColumn</DateTimeRange>
+            <SelectedColumn>NGAY_BAT_DAU_LAM</SelectedColumn>
+            <UseOffsetDetails>true</UseOffsetDetails>
             <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
-            <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
+            <OffsetFromColumnMaxDays>2920</OffsetFromColumnMaxDays>
             <MinDate>2016-02-01T00:00:00</MinDate>
             <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
             <IsRandomizeDate>true</IsRandomizeDate>
@@ -1189,7 +1191,7 @@
             <SeedValue>48</SeedValue>
             <Unique>true</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>(\D(\D(\D)))/(\D(\D))[ ]($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
+            <Expression>(\D(\D(\D)))/(\D(\D))[ ]($"D:\HCMUS\CSDL_Adv\DoAn\ThucHanh\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -1208,7 +1210,7 @@
             <SeedValue>49</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
+            <Expression>($"D:\HCMUS\CSDL_Adv\DoAn\ThucHanh\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -1227,7 +1229,7 @@
             <SeedValue>50</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
+            <Expression>($"D:\HCMUS\CSDL_Adv\DoAn\ThucHanh\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -1246,7 +1248,7 @@
             <SeedValue>51</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
+            <Expression>($"D:\HCMUS\CSDL_Adv\DoAn\ThucHanh\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
