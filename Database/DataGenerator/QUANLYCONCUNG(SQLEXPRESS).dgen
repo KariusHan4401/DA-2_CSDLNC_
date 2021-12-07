@@ -6,7 +6,7 @@
     <ProviderVersion>5.8.127.0</ProviderVersion>
     <GeneratorVersion>6.1.1225.0</GeneratorVersion>
     <Provider>aa8afe9c-7d62-4564-b477-c12e62e0f440</Provider>
-    <ConnectionString>Data Source=MSI;Encrypt=False;Integrated Security=True;User ID=MSI\PC</ConnectionString>
+    <ConnectionString>Data Source=LAPTOP-KTF30DB7\SQLEXPRESS;Encrypt=False;Integrated Security=True;User ID=LAPTOP-KTF30DB7\AN515-52</ConnectionString>
     <CategoryId>00000000-0000-0000-0000-000000000000</CategoryId>
     <DatabaseName>QUANLYCONCUNG</DatabaseName>
     <AllowNulls>true</AllowNulls>
@@ -70,263 +70,12 @@
             <SeedValue>37</SeedValue>
             <Unique>true</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\loai_hang.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\loai_hang.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
           <Length>30</Length>
-        </Column>
-      </Columns>
-    </Table>
-    <Table Name="dbo.NHAN_VIEN">
-      <Checked>true</Checked>
-      <Settings>
-        <Truncate>true</Truncate>
-        <RowsToGenerate>0</RowsToGenerate>
-        <PopulationDetails>
-          <PopulationType>RowsCount</PopulationType>
-          <RowsCount>1000</RowsCount>
-          <LookupProportion>30</LookupProportion>
-          <ProportionOfExistingData>10</ProportionOfExistingData>
-          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
-        </PopulationDetails>
-      </Settings>
-      <Columns>
-        <Column Name="MANV">
-          <Checked>true</Checked>
-          <DataType>char</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>0</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>44</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>NV(${counter([0-9]{6})})</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>8</Length>
-        </Column>
-        <Column Name="TEN_NV">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>45</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>(Lê|Nguyễn|Trần|Hoàng|Võ|Trịnh|Thái|Châu|Phan|Phùng|Triệu|Cao|Đỗ|Mạc|Đặng|Lưu|Bùi|Đinh|Mai|Ngô|Đào|Đoàn|Hà|Dương|Lương|Vũ|Phạm|Huỳnh)[ ](Diệu|Cẩm|Anh|Văn|Trảng|Hương|Trọng|Bá|Trường|Thúc|Bách|Di|Liên|Khải|Mỹ|Từ|Vân|Tùy|Xuân|Trà|Quang|Tuệ|Vĩnh|Nhật|Bảo|Á|Hạ|Khánh|An|Hải|Thúy|Đăng|Hàm|Hồng|Đình|Phương|Ngọc|Duy|Minh|Hoàng|Như|Kim|Hoài|Ái|Bảo|Kiều|Gia|Thiên|Tú|Khả|Thế|Thanh|Thục)[ ](Phúc|Lộc|Quý|Thọ|Khang|Tường|Bình|Nhi|Ngân|Nhung|Bảo|Diễm|Trọng|Thảo|Thiên|Ân|Khánh|Khôi|An|Kỳ|Nam|Vĩnh|Văn|Hồng|Triều|Hùng|Tài|Thắng|Oanh|Lan|Lam|Phúc|Khang|Minh|Tâm|Quỳnh|Loan|Ái|Toàn|Uyên|Vy|Thành|Khoa|Phi|Yến|Thái|Tuấn|Ly|Thi|Anh|Ngân|Phương|Trúc|Kha|Hằng|Huyền|Dương|Thương|Ý|Bình|Quang|Đan|Chiến|Hà|Thảo|Phong|Hiếu|Trâm)</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
-        </Column>
-        <Column Name="SDT">
-          <Checked>true</Checked>
-          <DataType>char</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>46</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>09\d{8}</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>10</Length>
-        </Column>
-        <Column Name="CMND">
-          <Checked>true</Checked>
-          <DataType>varchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>47</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>\d{12}</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>12</Length>
-        </Column>
-        <Column Name="NGAY_BAT_DAU_LAM">
-          <Checked>true</Checked>
-          <DataType>date</DataType>
-          <GeneratorOptions xsi:type="DateGeneratorOptions">
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <UseDefault>false</UseDefault>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>44</SeedValue>
-            <SequentialValueTicks>864000000000</SequentialValueTicks>
-            <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
-            <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
-            <DateTimeRange>MinMaxDate</DateTimeRange>
-            <UseOffsetDetails>false</UseOffsetDetails>
-            <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
-            <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
-            <MinDate>2011-01-01T00:00:00+07:00</MinDate>
-            <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
-            <IsRandomizeDate>true</IsRandomizeDate>
-          </GeneratorOptions>
-          <GeneratorType>SqlDateGenerator</GeneratorType>
-          <GeneratorName>date</GeneratorName>
-          <GeneratorDescription>fill with date values</GeneratorDescription>
-          <Length>3</Length>
-          <Precision>10</Precision>
-        </Column>
-        <Column Name="NGAY_NGHI_VIEC">
-          <Checked>true</Checked>
-          <DataType>date</DataType>
-          <GeneratorOptions xsi:type="DateGeneratorOptions">
-            <AllowNulls>true</AllowNulls>
-            <NullProportion>85</NullProportion>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <UseDefault>false</UseDefault>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>45</SeedValue>
-            <SequentialValueTicks>864000000000</SequentialValueTicks>
-            <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
-            <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
-            <DateTimeRange>OffsetFromColumn</DateTimeRange>
-            <SelectedColumn>NGAY_BAT_DAU_LAM</SelectedColumn>
-            <UseOffsetDetails>true</UseOffsetDetails>
-            <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
-            <OffsetFromColumnMaxDays>2920</OffsetFromColumnMaxDays>
-            <MinDate>2016-02-01T00:00:00</MinDate>
-            <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
-            <IsRandomizeDate>true</IsRandomizeDate>
-          </GeneratorOptions>
-          <GeneratorType>SqlDateGenerator</GeneratorType>
-          <GeneratorName>date</GeneratorName>
-          <GeneratorDescription>fill with date values</GeneratorDescription>
-          <Length>3</Length>
-          <Precision>10</Precision>
-        </Column>
-        <Column Name="SO_NHA_DUONG">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>48</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>(\D(\D(\D)))/(\D(\D))[ ]($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
-        </Column>
-        <Column Name="PHUONG_XA">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>49</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
-        </Column>
-        <Column Name="QUAN_TP">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>50</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>60</Length>
-        </Column>
-        <Column Name="TP_TINH">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>true</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>51</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>60</Length>
-        </Column>
-        <Column Name="LUONG">
-          <Checked>false</Checked>
-          <DataType>money</DataType>
-          <Scale>4</Scale>
-          <Length>8</Length>
-          <Precision>19</Precision>
-        </Column>
-        <Column Name="MACN">
-          <Checked>true</Checked>
-          <DataType>char</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>true</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>56</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>[0-9A-Z]+</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>8</Length>
         </Column>
       </Columns>
     </Table>
@@ -352,6 +101,7 @@
         <Column Name="LOAI_THE">
           <Checked>false</Checked>
           <DataType>nvarchar</DataType>
+          <HasCheckConstraint>true</HasCheckConstraint>
           <Length>30</Length>
         </Column>
         <Column Name="PHAN_TRAM_TICH_LUY">
@@ -413,7 +163,7 @@
             <SeedValue>58</SeedValue>
             <Unique>true</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\thuong_hieu.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\thuong_hieu.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -448,7 +198,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>1000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -474,25 +224,6 @@
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
           <Length>8</Length>
         </Column>
-        <Column Name="LOAI_AP_DUNG">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>62</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\thuong_hieu.txt")|Tổng bill</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
-        </Column>
         <Column Name="PHAN_TRAM_GIAM_GIA">
           <Checked>true</Checked>
           <DataType>float</DataType>
@@ -505,7 +236,7 @@
             <SeedValue>61</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -527,7 +258,7 @@
             <MinValue>100000</MinValue>
             <MaxValue>500000</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(10000)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>MoneyGenerator</GeneratorType>
           <GeneratorName>money</GeneratorName>
@@ -539,36 +270,19 @@
         <Column Name="TG_BAT_DAU">
           <Checked>true</Checked>
           <DataType>datetime</DataType>
-          <GeneratorOptions xsi:type="DateTimeGeneratorOptions">
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
+          <GeneratorOptions xsi:type="CheckConstraintGeneratorOptions">
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <UseDefault>false</UseDefault>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>0</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>61</SeedValue>
-            <SequentialValueTicks>864000000000</SequentialValueTicks>
-            <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
-            <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
-            <DateTimeRange>MinMaxDate</DateTimeRange>
-            <UseOffsetDetails>false</UseOffsetDetails>
-            <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
-            <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
-            <MinDate>2011-12-01T00:00:00+07:00</MinDate>
-            <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
-            <IsRandomizeDate>true</IsRandomizeDate>
-            <IsRandomizeTime>true</IsRandomizeTime>
-            <MinFraction>0</MinFraction>
-            <MaxFraction>99</MaxFraction>
-            <IsRandomizeFraction>false</IsRandomizeFraction>
-            <Scale>2</Scale>
-            <Precision>0</Precision>
-            <MaxTime>863990000000</MaxTime>
-            <MinTime>10000000</MinTime>
+            <SeedValue>62</SeedValue>
+            <IsApplyMeaningfulBounds>true</IsApplyMeaningfulBounds>
           </GeneratorOptions>
-          <GeneratorType>SqlDateTimeGenerator</GeneratorType>
-          <GeneratorName>datetime</GeneratorName>
-          <GeneratorDescription>fill with date and time with fractional seconds values</GeneratorDescription>
+          <GeneratorType>CheckConstraintGenerator</GeneratorType>
+          <GeneratorName>Check Constraint (auto assigned)</GeneratorName>
+          <GeneratorDescription>fill with values within the value range of the check constraint expression</GeneratorDescription>
+          <HasCheckConstraint>true</HasCheckConstraint>
           <Scale>3</Scale>
           <Length>8</Length>
           <Precision>23</Precision>
@@ -576,215 +290,22 @@
         <Column Name="TG_KET_THUC">
           <Checked>true</Checked>
           <DataType>datetime</DataType>
-          <GeneratorOptions xsi:type="DateTimeGeneratorOptions">
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>60</NullProportion>
+          <GeneratorOptions xsi:type="CheckConstraintGeneratorOptions">
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <UseDefault>false</UseDefault>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>62</SeedValue>
-            <SequentialValueTicks>864000000000</SequentialValueTicks>
-            <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
-            <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
-            <DateTimeRange>OffsetFromColumn</DateTimeRange>
-            <SelectedColumn>TG_BAT_DAU</SelectedColumn>
-            <UseOffsetDetails>true</UseOffsetDetails>
-            <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
-            <OffsetFromColumnMaxDays>30</OffsetFromColumnMaxDays>
-            <MinDate>1970-01-01T00:00:00</MinDate>
-            <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
-            <IsRandomizeDate>true</IsRandomizeDate>
-            <IsRandomizeTime>true</IsRandomizeTime>
-            <MinFraction>0</MinFraction>
-            <MaxFraction>99</MaxFraction>
-            <IsRandomizeFraction>false</IsRandomizeFraction>
-            <Scale>2</Scale>
-            <Precision>0</Precision>
-            <MaxTime>863990000000</MaxTime>
-            <MinTime>10000000</MinTime>
+            <SeedValue>63</SeedValue>
+            <IsApplyMeaningfulBounds>true</IsApplyMeaningfulBounds>
           </GeneratorOptions>
-          <GeneratorType>SqlDateTimeGenerator</GeneratorType>
-          <GeneratorName>datetime</GeneratorName>
-          <GeneratorDescription>fill with date and time with fractional seconds values</GeneratorDescription>
+          <GeneratorType>CheckConstraintGenerator</GeneratorType>
+          <GeneratorName>Check Constraint (auto assigned)</GeneratorName>
+          <GeneratorDescription>fill with values within the value range of the check constraint expression</GeneratorDescription>
+          <HasCheckConstraint>true</HasCheckConstraint>
           <Scale>3</Scale>
           <Length>8</Length>
           <Precision>23</Precision>
-        </Column>
-        <Column Name="SO_LUONG_AP_DUNG">
-          <Checked>true</Checked>
-          <DataType>int</DataType>
-          <GeneratorOptions xsi:type="IntegerGeneratorOptions">
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Increment xsi:type="xsd:int">1</Increment>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>61</SeedValue>
-            <MinValue>100</MinValue>
-            <MaxValue>500</MaxValue>
-            <UseDefault>false</UseDefault>
-            <DefaultValue />
-          </GeneratorOptions>
-          <GeneratorType>SqlIntegerGenerator</GeneratorType>
-          <GeneratorName>int</GeneratorName>
-          <GeneratorDescription>fill with 32-bit signed integer values</GeneratorDescription>
-          <Length>4</Length>
-          <Precision>10</Precision>
-        </Column>
-      </Columns>
-    </Table>
-    <Table Name="dbo.CHI_NHANH">
-      <Checked>true</Checked>
-      <Settings>
-        <Truncate>true</Truncate>
-        <RowsToGenerate>0</RowsToGenerate>
-        <PopulationDetails>
-          <PopulationType>RowsCount</PopulationType>
-          <RowsCount>550</RowsCount>
-          <LookupProportion>30</LookupProportion>
-          <ProportionOfExistingData>10</ProportionOfExistingData>
-          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
-        </PopulationDetails>
-      </Settings>
-      <Columns>
-        <Column Name="MACN">
-          <Checked>true</Checked>
-          <DataType>char</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>0</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>7</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>CN(${counter([0-9]{6})})</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>8</Length>
-        </Column>
-        <Column Name="NVQL">
-          <Checked>true</Checked>
-          <DataType>char</DataType>
-          <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <AllowNulls>true</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>7</SeedValue>
-            <RepeatValues>false</RepeatValues>
-            <FromTimes>1</FromTimes>
-            <ToTimes>10</ToTimes>
-            <ExcludeValues>false</ExcludeValues>
-            <ExclusionValuesPercent>1</ExclusionValuesPercent>
-          </GeneratorOptions>
-          <GeneratorType>ForeignKeyGenerator</GeneratorType>
-          <GeneratorName>Foreign Key (auto assigned)</GeneratorName>
-          <GeneratorDescription>references a column from parent table</GeneratorDescription>
-          <HasForeignKey>true</HasForeignKey>
-          <Length>8</Length>
-        </Column>
-        <Column Name="SDT_CN">
-          <Checked>true</Checked>
-          <DataType>char</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>8</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>028 \d{9}</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Phone Number (local)</GeneratorName>
-          <GeneratorDescription>352-5422, 114-6587, 025-9635, 267-4128, 725-5250, ...</GeneratorDescription>
-          <GeneratorCategory>Personal</GeneratorCategory>
-          <Length>10</Length>
-        </Column>
-        <Column Name="SO_NHA_DUONG">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>9</SeedValue>
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>(\D(\D(\D)))[ ]($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
-        </Column>
-        <Column Name="PHUONG_XA">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>10</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
-        </Column>
-        <Column Name="QUAN_TP">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>11</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>60</Length>
-        </Column>
-        <Column Name="TP_TINH">
-          <Checked>true</Checked>
-          <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>12</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
-          </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>60</Length>
         </Column>
       </Columns>
     </Table>
@@ -795,7 +316,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>100000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -907,7 +428,7 @@
           <Length>3</Length>
           <Precision>10</Precision>
         </Column>
-        <Column Name="DIEM_TICH_LUY">
+        <Column Name="TONG_DIEM_TICH_LUY">
           <Checked>false</Checked>
           <DataType>int</DataType>
           <Length>4</Length>
@@ -942,7 +463,7 @@
             <NullProportion>10</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
             <SeedValue>35</SeedValue>
-            <Unique>false</Unique>
+            <Unique>true</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
             <Expression>($"FirstNamesMale.txt")|($"FirstNamesFemale.txt")</Expression>
           </GeneratorOptions>
@@ -998,7 +519,7 @@
           <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <AllowNulls>true</AllowNulls>
+            <AllowNulls>false</AllowNulls>
             <NullProportion>10</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
             <SeedValue>38</SeedValue>
@@ -1026,7 +547,7 @@
             <SeedValue>39</SeedValue>
             <Unique>true</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Nha_cung_cap.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Nha_cung_cap.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -1045,12 +566,12 @@
             <SeedValue>40</SeedValue>
             <Unique>true</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>(\D(\D))[ ]($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
+            <Expression>(\D(\D))[ ]($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
+          <Length>60</Length>
         </Column>
         <Column Name="PHUONG_XA">
           <Checked>true</Checked>
@@ -1064,12 +585,12 @@
             <SeedValue>41</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>100</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="QUAN_TP">
           <Checked>true</Checked>
@@ -1083,12 +604,12 @@
             <SeedValue>42</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>60</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="TP_TINH">
           <Checked>true</Checked>
@@ -1102,12 +623,12 @@
             <SeedValue>43</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>60</Length>
+          <Length>40</Length>
         </Column>
       </Columns>
     </Table>
@@ -1172,7 +693,7 @@
           <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <AllowNulls>true</AllowNulls>
+            <AllowNulls>false</AllowNulls>
             <NullProportion>10</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
             <SeedValue>54</SeedValue>
@@ -1200,7 +721,7 @@
             <SeedValue>54</SeedValue>
             <Unique>true</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\sanpham.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\sanpham.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -1259,7 +780,7 @@
             <MinValue>0</MinValue>
             <MaxValue>1000</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>SqlIntegerGenerator</GeneratorType>
           <GeneratorName>int</GeneratorName>
@@ -1281,7 +802,7 @@
             <MinValue>0</MinValue>
             <MaxValue>10</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>SqlIntegerGenerator</GeneratorType>
           <GeneratorName>int</GeneratorName>
@@ -1314,6 +835,422 @@
         </Column>
       </Columns>
     </Table>
+    <Table Name="dbo.CHI_NHANH">
+      <Checked>true</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>550</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="MACN">
+          <Checked>true</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>0</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>7</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>CN(${counter([0-9]{6})})</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>8</Length>
+        </Column>
+        <Column Name="NVQL">
+          <Checked>true</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <AllowNulls>true</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>7</SeedValue>
+            <RepeatValues>false</RepeatValues>
+            <FromTimes>1</FromTimes>
+            <ToTimes>10</ToTimes>
+            <ExcludeValues>false</ExcludeValues>
+            <ExclusionValuesPercent>1</ExclusionValuesPercent>
+          </GeneratorOptions>
+          <GeneratorType>ForeignKeyGenerator</GeneratorType>
+          <GeneratorName>Foreign Key (auto assigned)</GeneratorName>
+          <GeneratorDescription>references a column from parent table</GeneratorDescription>
+          <HasForeignKey>true</HasForeignKey>
+          <Length>8</Length>
+        </Column>
+        <Column Name="SDT_CN">
+          <Checked>true</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>8</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>028 \d{9}</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Phone Number (local)</GeneratorName>
+          <GeneratorDescription>352-5422, 114-6587, 025-9635, 267-4128, 725-5250, ...</GeneratorDescription>
+          <GeneratorCategory>Personal</GeneratorCategory>
+          <Length>10</Length>
+        </Column>
+        <Column Name="SO_NHA_DUONG">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>9</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>(\D(\D(\D)))[ ]($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>60</Length>
+        </Column>
+        <Column Name="PHUONG_XA">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>10</SeedValue>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>40</Length>
+        </Column>
+        <Column Name="QUAN_TP">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>11</SeedValue>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>40</Length>
+        </Column>
+        <Column Name="TP_TINH">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>12</SeedValue>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>40</Length>
+        </Column>
+      </Columns>
+    </Table>
+    <Table Name="dbo.NHAN_VIEN">
+      <Checked>true</Checked>
+      <Settings>
+        <Truncate>true</Truncate>
+        <RowsToGenerate>0</RowsToGenerate>
+        <PopulationDetails>
+          <PopulationType>RowsCount</PopulationType>
+          <RowsCount>100</RowsCount>
+          <LookupProportion>30</LookupProportion>
+          <ProportionOfExistingData>10</ProportionOfExistingData>
+          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
+        </PopulationDetails>
+      </Settings>
+      <Columns>
+        <Column Name="MANV">
+          <Checked>true</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>0</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>44</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>NV(${counter([0-9]{6})})</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>8</Length>
+        </Column>
+        <Column Name="TEN_NV">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>45</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>(Lê|Nguyễn|Trần|Hoàng|Võ|Trịnh|Thái|Châu|Phan|Phùng|Triệu|Cao|Đỗ|Mạc|Đặng|Lưu|Bùi|Đinh|Mai|Ngô|Đào|Đoàn|Hà|Dương|Lương|Vũ|Phạm|Huỳnh)[ ](Diệu|Cẩm|Anh|Văn|Trảng|Hương|Trọng|Bá|Trường|Thúc|Bách|Di|Liên|Khải|Mỹ|Từ|Vân|Tùy|Xuân|Trà|Quang|Tuệ|Vĩnh|Nhật|Bảo|Á|Hạ|Khánh|An|Hải|Thúy|Đăng|Hàm|Hồng|Đình|Phương|Ngọc|Duy|Minh|Hoàng|Như|Kim|Hoài|Ái|Bảo|Kiều|Gia|Thiên|Tú|Khả|Thế|Thanh|Thục)[ ](Phúc|Lộc|Quý|Thọ|Khang|Tường|Bình|Nhi|Ngân|Nhung|Bảo|Diễm|Trọng|Thảo|Thiên|Ân|Khánh|Khôi|An|Kỳ|Nam|Vĩnh|Văn|Hồng|Triều|Hùng|Tài|Thắng|Oanh|Lan|Lam|Phúc|Khang|Minh|Tâm|Quỳnh|Loan|Ái|Toàn|Uyên|Vy|Thành|Khoa|Phi|Yến|Thái|Tuấn|Ly|Thi|Anh|Ngân|Phương|Trúc|Kha|Hằng|Huyền|Dương|Thương|Ý|Bình|Quang|Đan|Chiến|Hà|Thảo|Phong|Hiếu|Trâm)</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>100</Length>
+        </Column>
+        <Column Name="MACN">
+          <Checked>true</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <AllowNulls>true</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>43</SeedValue>
+            <RepeatValues>false</RepeatValues>
+            <FromTimes>1</FromTimes>
+            <ToTimes>10</ToTimes>
+            <ExcludeValues>false</ExcludeValues>
+            <ExclusionValuesPercent>1</ExclusionValuesPercent>
+          </GeneratorOptions>
+          <GeneratorType>ForeignKeyGenerator</GeneratorType>
+          <GeneratorName>Foreign Key (auto assigned)</GeneratorName>
+          <GeneratorDescription>references a column from parent table</GeneratorDescription>
+          <HasForeignKey>true</HasForeignKey>
+          <Length>8</Length>
+        </Column>
+        <Column Name="SDT">
+          <Checked>true</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>46</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>09\d{8}</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>10</Length>
+        </Column>
+        <Column Name="CMND">
+          <Checked>true</Checked>
+          <DataType>varchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>47</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>\d{12}</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>12</Length>
+        </Column>
+        <Column Name="NGAY_BAT_DAU_LAM">
+          <Checked>true</Checked>
+          <DataType>date</DataType>
+          <GeneratorOptions xsi:type="CheckConstraintGeneratorOptions">
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>0</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>43</SeedValue>
+            <IsApplyMeaningfulBounds>true</IsApplyMeaningfulBounds>
+          </GeneratorOptions>
+          <GeneratorType>CheckConstraintGenerator</GeneratorType>
+          <GeneratorName>Check Constraint (auto assigned)</GeneratorName>
+          <GeneratorDescription>fill with values within the value range of the check constraint expression</GeneratorDescription>
+          <HasCheckConstraint>true</HasCheckConstraint>
+          <Length>3</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="NGAY_NGHI_VIEC">
+          <Checked>true</Checked>
+          <DataType>date</DataType>
+          <GeneratorOptions xsi:type="CheckConstraintGeneratorOptions">
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>44</SeedValue>
+            <IsApplyMeaningfulBounds>true</IsApplyMeaningfulBounds>
+          </GeneratorOptions>
+          <GeneratorType>CheckConstraintGenerator</GeneratorType>
+          <GeneratorName>Check Constraint (auto assigned)</GeneratorName>
+          <GeneratorDescription>fill with values within the value range of the check constraint expression</GeneratorDescription>
+          <HasCheckConstraint>true</HasCheckConstraint>
+          <Length>3</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="SO_NHA_DUONG">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>48</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>(\D(\D(\D)))/(\D(\D))[ ]($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>60</Length>
+        </Column>
+        <Column Name="PHUONG_XA">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>49</SeedValue>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>40</Length>
+        </Column>
+        <Column Name="QUAN_TP">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>50</SeedValue>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>40</Length>
+        </Column>
+        <Column Name="TP_TINH">
+          <Checked>true</Checked>
+          <DataType>nvarchar</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>true</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>51</SeedValue>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <Length>40</Length>
+        </Column>
+        <Column Name="LUONG">
+          <Checked>false</Checked>
+          <DataType>money</DataType>
+          <Scale>4</Scale>
+          <Length>8</Length>
+          <Precision>19</Precision>
+        </Column>
+        <Column Name="TONG_DON_BAN">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+        <Column Name="TONG_TIEN_BAN">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <GeneratorOptions xsi:type="IntegerGeneratorOptions">
+            <AllowNulls>true</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Increment xsi:type="xsd:int">1</Increment>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>44</SeedValue>
+            <MinValue>-2147483648</MinValue>
+            <MaxValue>2147483647</MaxValue>
+            <UseDefault>false</UseDefault>
+            <DefaultValue>(0)</DefaultValue>
+          </GeneratorOptions>
+          <GeneratorType>SqlIntegerGenerator</GeneratorType>
+          <GeneratorName>int</GeneratorName>
+          <GeneratorDescription>fill with 32-bit signed integer values</GeneratorDescription>
+          <Length>4</Length>
+          <Precision>10</Precision>
+        </Column>
+      </Columns>
+    </Table>
     <Table Name="dbo.DON_HANG">
       <Checked>true</Checked>
       <Settings>
@@ -1321,7 +1258,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>100000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -1379,6 +1316,28 @@
             <NullProportion>10</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
             <SeedValue>22</SeedValue>
+            <RepeatValues>false</RepeatValues>
+            <FromTimes>1</FromTimes>
+            <ToTimes>10</ToTimes>
+            <ExcludeValues>false</ExcludeValues>
+            <ExclusionValuesPercent>1</ExclusionValuesPercent>
+          </GeneratorOptions>
+          <GeneratorType>ForeignKeyGenerator</GeneratorType>
+          <GeneratorName>Foreign Key (auto assigned)</GeneratorName>
+          <GeneratorDescription>references a column from parent table</GeneratorDescription>
+          <HasForeignKey>true</HasForeignKey>
+          <Length>8</Length>
+        </Column>
+        <Column Name="MACN">
+          <Checked>false</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <AllowNulls>true</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>24</SeedValue>
             <RepeatValues>false</RepeatValues>
             <FromTimes>1</FromTimes>
             <ToTimes>10</ToTimes>
@@ -1450,7 +1409,7 @@
             <MinValue>10000</MinValue>
             <MaxValue>100000</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>MoneyGenerator</GeneratorType>
           <GeneratorName>money</GeneratorName>
@@ -1471,7 +1430,7 @@
             <SeedValue>23</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -1483,20 +1442,19 @@
         <Column Name="HINH_THUC_THANH_TOAN">
           <Checked>true</Checked>
           <DataType>nvarchar</DataType>
-          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
-            <AllowEmptyStrings>false</AllowEmptyStrings>
-            <EmptyStringProportion>10</EmptyStringProportion>
-            <AllowNulls>false</AllowNulls>
+          <GeneratorOptions xsi:type="CheckConstraintGeneratorOptions">
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <AllowNulls>true</AllowNulls>
             <NullProportion>10</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
             <SeedValue>22</SeedValue>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\thanh_toan.txt")</Expression>
+            <IsApplyMeaningfulBounds>true</IsApplyMeaningfulBounds>
           </GeneratorOptions>
-          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
-          <GeneratorName>Reg Exp</GeneratorName>
-          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
+          <GeneratorType>CheckConstraintGenerator</GeneratorType>
+          <GeneratorName>Check Constraint (auto assigned)</GeneratorName>
+          <GeneratorDescription>fill with values within the value range of the check constraint expression</GeneratorDescription>
+          <HasCheckConstraint>true</HasCheckConstraint>
           <Length>50</Length>
         </Column>
         <Column Name="TONG_PHI">
@@ -1513,7 +1471,7 @@
             <MinValue>100000</MinValue>
             <MaxValue>10000000</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>MoneyGenerator</GeneratorType>
           <GeneratorName>money</GeneratorName>
@@ -1534,12 +1492,12 @@
             <SeedValue>23</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>(\D(\D))/(\D(\D))[ ]($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
+            <Expression>(\D(\D))/(\D(\D))[ ]($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>255</Length>
+          <Length>60</Length>
         </Column>
         <Column Name="PHUONG_XA">
           <Checked>true</Checked>
@@ -1553,12 +1511,12 @@
             <SeedValue>24</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>50</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="QUAN_TP">
           <Checked>true</Checked>
@@ -1572,12 +1530,12 @@
             <SeedValue>25</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>50</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="TP_TINH">
           <Checked>true</Checked>
@@ -1591,29 +1549,46 @@
             <SeedValue>26</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>50</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="TG_LAP_DH">
           <Checked>true</Checked>
           <DataType>datetime</DataType>
-          <GeneratorOptions xsi:type="CheckConstraintGeneratorOptions">
+          <GeneratorOptions xsi:type="DateTimeGeneratorOptions">
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>0</NullProportion>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <AllowNulls>true</AllowNulls>
-            <NullProportion>10</NullProportion>
+            <UseDefault>false</UseDefault>
             <ValueDistributionMode>Seed</ValueDistributionMode>
             <SeedValue>22</SeedValue>
-            <IsApplyMeaningfulBounds>true</IsApplyMeaningfulBounds>
+            <SequentialValueTicks>864000000000</SequentialValueTicks>
+            <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
+            <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
+            <DateTimeRange>MinMaxDate</DateTimeRange>
+            <UseOffsetDetails>false</UseOffsetDetails>
+            <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
+            <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
+            <MinDate>1970-01-01T00:00:00</MinDate>
+            <MaxDate>2021-12-08T00:00:00+07:00</MaxDate>
+            <IsRandomizeDate>true</IsRandomizeDate>
+            <IsRandomizeTime>true</IsRandomizeTime>
+            <MinFraction>0</MinFraction>
+            <MaxFraction>99</MaxFraction>
+            <IsRandomizeFraction>true</IsRandomizeFraction>
+            <Scale>2</Scale>
+            <Precision>0</Precision>
+            <MaxTime>863990000000</MaxTime>
+            <MinTime>10000000</MinTime>
           </GeneratorOptions>
-          <GeneratorType>CheckConstraintGenerator</GeneratorType>
-          <GeneratorName>Check Constraint (auto assigned)</GeneratorName>
-          <GeneratorDescription>fill with values within the value range of the check constraint expression</GeneratorDescription>
-          <HasCheckConstraint>true</HasCheckConstraint>
+          <GeneratorType>SqlDateTimeGenerator</GeneratorType>
+          <GeneratorName>datetime</GeneratorName>
+          <GeneratorDescription>fill with date and time with fractional seconds values</GeneratorDescription>
           <Scale>3</Scale>
           <Length>8</Length>
           <Precision>23</Precision>
@@ -1621,15 +1596,21 @@
         <Column Name="TRANG_THAI">
           <Checked>false</Checked>
           <DataType>nvarchar</DataType>
+          <HasCheckConstraint>true</HasCheckConstraint>
           <Length>10</Length>
         </Column>
         <Column Name="TG_TRANG_THAI">
           <Checked>false</Checked>
           <DataType>datetime</DataType>
-          <HasCheckConstraint>true</HasCheckConstraint>
           <Scale>3</Scale>
           <Length>8</Length>
           <Precision>23</Precision>
+        </Column>
+        <Column Name="DIEM_TICH_LUY">
+          <Checked>false</Checked>
+          <DataType>int</DataType>
+          <Length>4</Length>
+          <Precision>10</Precision>
         </Column>
       </Columns>
     </Table>
@@ -1640,7 +1621,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>10000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -1673,6 +1654,28 @@
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
             <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>52</SeedValue>
+            <RepeatValues>false</RepeatValues>
+            <FromTimes>1</FromTimes>
+            <ToTimes>10</ToTimes>
+            <ExcludeValues>false</ExcludeValues>
+            <ExclusionValuesPercent>1</ExclusionValuesPercent>
+          </GeneratorOptions>
+          <GeneratorType>ForeignKeyGenerator</GeneratorType>
+          <GeneratorName>Foreign Key (auto assigned)</GeneratorName>
+          <GeneratorDescription>references a column from parent table</GeneratorDescription>
+          <HasForeignKey>true</HasForeignKey>
+          <Length>8</Length>
+        </Column>
+        <Column Name="MACN">
+          <Checked>false</Checked>
+          <DataType>char</DataType>
+          <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <AllowNulls>true</AllowNulls>
             <NullProportion>10</NullProportion>
             <ValueDistributionMode>Seed</ValueDistributionMode>
             <SeedValue>52</SeedValue>
@@ -1739,7 +1742,7 @@
             <MinValue>10000000</MinValue>
             <MaxValue>100000000</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>MoneyGenerator</GeneratorType>
           <GeneratorName>money</GeneratorName>
@@ -1762,7 +1765,7 @@
             <MinValue>1</MinValue>
             <MaxValue>20</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>SqlIntegerGenerator</GeneratorType>
           <GeneratorName>int</GeneratorName>
@@ -1779,7 +1782,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>5000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -1844,7 +1847,7 @@
             <MinValue>10</MinValue>
             <MaxValue>1000</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>SqlIntegerGenerator</GeneratorType>
           <GeneratorName>int</GeneratorName>
@@ -1866,7 +1869,7 @@
             <MinValue>-2147483648</MinValue>
             <MaxValue>2147483647</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>SqlIntegerGenerator</GeneratorType>
           <GeneratorName>int</GeneratorName>
@@ -1883,7 +1886,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>1000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -1946,7 +1949,7 @@
             <SeedValue>3</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\comment.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\comment.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -1999,7 +2002,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>100000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -2042,13 +2045,12 @@
             <SequentialValueTicks>864000000000</SequentialValueTicks>
             <OffsetFromColumnMaxTimeTicks>10000000</OffsetFromColumnMaxTimeTicks>
             <OffsetFromColumnMinTimeTicks>10000000</OffsetFromColumnMinTimeTicks>
-            <DateTimeRange>OffsetFromColumn</DateTimeRange>
-            <SelectedColumn>TG_RA_CA</SelectedColumn>
+            <DateTimeRange>MinMaxDate</DateTimeRange>
             <UseOffsetDetails>false</UseOffsetDetails>
             <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
             <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
-            <MinDate>2016-01-01T00:00:00</MinDate>
-            <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
+            <MinDate>1970-01-01T00:00:00</MinDate>
+            <MaxDate>2021-12-08T00:00:00+07:00</MaxDate>
             <IsRandomizeDate>true</IsRandomizeDate>
             <IsRandomizeTime>true</IsRandomizeTime>
             <MinFraction>0</MinFraction>
@@ -2056,12 +2058,13 @@
             <IsRandomizeFraction>true</IsRandomizeFraction>
             <Scale>2</Scale>
             <Precision>0</Precision>
-            <MaxTime>792000000000</MaxTime>
-            <MinTime>252000000000</MinTime>
+            <MaxTime>863990000000</MaxTime>
+            <MinTime>10000000</MinTime>
           </GeneratorOptions>
           <GeneratorType>SqlDateTimeGenerator</GeneratorType>
           <GeneratorName>datetime</GeneratorName>
           <GeneratorDescription>fill with date and time with fractional seconds values</GeneratorDescription>
+          <HasCheckConstraint>true</HasCheckConstraint>
           <Scale>3</Scale>
           <Length>8</Length>
           <Precision>23</Precision>
@@ -2085,7 +2088,7 @@
             <OffsetFromColumnMinDays>0</OffsetFromColumnMinDays>
             <OffsetFromColumnMaxDays>7</OffsetFromColumnMaxDays>
             <MinDate>1970-01-01T00:00:00</MinDate>
-            <MaxDate>2021-12-02T00:00:00+07:00</MaxDate>
+            <MaxDate>2021-12-08T00:00:00+07:00</MaxDate>
             <IsRandomizeDate>true</IsRandomizeDate>
             <IsRandomizeTime>true</IsRandomizeTime>
             <MinFraction>0</MinFraction>
@@ -2099,6 +2102,7 @@
           <GeneratorType>SqlDateTimeGenerator</GeneratorType>
           <GeneratorName>datetime</GeneratorName>
           <GeneratorDescription>fill with date and time with fractional seconds values</GeneratorDescription>
+          <HasCheckConstraint>true</HasCheckConstraint>
           <Scale>3</Scale>
           <Length>8</Length>
           <Precision>23</Precision>
@@ -2112,7 +2116,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>100000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -2177,7 +2181,7 @@
             <MinValue>1</MinValue>
             <MaxValue>20</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(1)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>SqlIntegerGenerator</GeneratorType>
           <GeneratorName>int</GeneratorName>
@@ -2197,7 +2201,7 @@
             <SeedValue>13</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\%GiamGia.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
@@ -2238,7 +2242,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>100000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -2332,7 +2336,7 @@
             <MinValue>100000</MinValue>
             <MaxValue>1000000000</MaxValue>
             <UseDefault>false</UseDefault>
-            <DefaultValue />
+            <DefaultValue>(0)</DefaultValue>
           </GeneratorOptions>
           <GeneratorType>MoneyGenerator</GeneratorType>
           <GeneratorName>money</GeneratorName>
@@ -2350,7 +2354,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>100000</RowsCount>
+          <RowsCount>100</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -2413,12 +2417,12 @@
             <SeedValue>17</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>(\D(\D))/(\D(\D))[ ]($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
+            <Expression>(\D(\D))/(\D(\D))[ ]($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Duong_1.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>30</Length>
+          <Length>60</Length>
         </Column>
         <Column Name="PHUONG_XA">
           <Checked>true</Checked>
@@ -2432,12 +2436,12 @@
             <SeedValue>18</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Phuong.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>20</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="QUAN_TP">
           <Checked>true</Checked>
@@ -2451,12 +2455,12 @@
             <SeedValue>19</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Quan.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>20</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="TP_TINH">
           <Checked>true</Checked>
@@ -2470,12 +2474,12 @@
             <SeedValue>20</SeedValue>
             <Unique>false</Unique>
             <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Expression>($"C:\Users\PC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
+            <Expression>($"C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\CNTT_KHTN\HK1_2021_2022\CSDLNC\DA-2_CSDLNC_\Database\DataGenerator\Tpho.txt")</Expression>
           </GeneratorOptions>
           <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
           <GeneratorName>Reg Exp</GeneratorName>
           <GeneratorDescription>values based on a regular expression</GeneratorDescription>
-          <Length>20</Length>
+          <Length>40</Length>
         </Column>
         <Column Name="MAC_DINH">
           <Checked>true</Checked>
@@ -2556,7 +2560,7 @@
         <RowsToGenerate>0</RowsToGenerate>
         <PopulationDetails>
           <PopulationType>RowsCount</PopulationType>
-          <RowsCount>50000</RowsCount>
+          <RowsCount>50</RowsCount>
           <LookupProportion>30</LookupProportion>
           <ProportionOfExistingData>10</ProportionOfExistingData>
           <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
@@ -2564,12 +2568,26 @@
       </Settings>
       <Columns>
         <Column Name="MA_BE">
-          <Checked>false</Checked>
+          <Checked>true</Checked>
           <DataType>char</DataType>
+          <GeneratorOptions xsi:type="SqlRegularExpressionGeneratorOptions">
+            <AllowEmptyStrings>false</AllowEmptyStrings>
+            <EmptyStringProportion>10</EmptyStringProportion>
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>0</NullProportion>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>27</SeedValue>
+            <Unique>true</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+            <Expression>BE(${counter([0-9]{6})})</Expression>
+          </GeneratorOptions>
+          <GeneratorType>SqlStringRegularExpressionGenerator</GeneratorType>
+          <GeneratorName>Reg Exp</GeneratorName>
+          <GeneratorDescription>values based on a regular expression</GeneratorDescription>
           <Length>8</Length>
         </Column>
         <Column Name="MA_BAME">
-          <Checked>false</Checked>
+          <Checked>true</Checked>
           <DataType>char</DataType>
           <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
             <Unique>false</Unique>
@@ -2635,110 +2653,6 @@
           <GeneratorName>date</GeneratorName>
           <GeneratorDescription>fill with date values</GeneratorDescription>
           <Length>3</Length>
-          <Precision>10</Precision>
-        </Column>
-      </Columns>
-    </Table>
-    <Table Name="dbo.HIEU_SUAT_LAM_VIEC">
-      <Checked>true</Checked>
-      <Settings>
-        <Truncate>true</Truncate>
-        <RowsToGenerate>0</RowsToGenerate>
-        <PopulationDetails>
-          <PopulationType>RowsCount</PopulationType>
-          <RowsCount>1000</RowsCount>
-          <LookupProportion>30</LookupProportion>
-          <ProportionOfExistingData>10</ProportionOfExistingData>
-          <TimeTicksToPopulate>100000000</TimeTicksToPopulate>
-        </PopulationDetails>
-      </Settings>
-      <Columns>
-        <Column Name="MANV">
-          <Checked>true</Checked>
-          <DataType>char</DataType>
-          <GeneratorOptions xsi:type="ForeignKeyGeneratorOptions">
-            <Unique>true</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>0</NullProportion>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>28</SeedValue>
-            <RepeatValues>false</RepeatValues>
-            <FromTimes>1</FromTimes>
-            <ToTimes>10</ToTimes>
-            <ExcludeValues>false</ExcludeValues>
-            <ExclusionValuesPercent>1</ExclusionValuesPercent>
-          </GeneratorOptions>
-          <GeneratorType>ForeignKeyGenerator</GeneratorType>
-          <GeneratorName>Foreign Key (auto assigned)</GeneratorName>
-          <GeneratorDescription>references a column from parent table</GeneratorDescription>
-          <HasForeignKey>true</HasForeignKey>
-          <Length>8</Length>
-        </Column>
-        <Column Name="TONG_DON_BAN">
-          <Checked>true</Checked>
-          <DataType>int</DataType>
-          <GeneratorOptions xsi:type="IntegerGeneratorOptions">
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Increment xsi:type="xsd:int">1</Increment>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>28</SeedValue>
-            <MinValue>0</MinValue>
-            <MaxValue>100</MaxValue>
-            <UseDefault>false</UseDefault>
-            <DefaultValue />
-          </GeneratorOptions>
-          <GeneratorType>SqlIntegerGenerator</GeneratorType>
-          <GeneratorName>int</GeneratorName>
-          <GeneratorDescription>fill with 32-bit signed integer values</GeneratorDescription>
-          <Length>4</Length>
-          <Precision>10</Precision>
-        </Column>
-        <Column Name="TONG_TIEN_BAN_DUOC">
-          <Checked>true</Checked>
-          <DataType>int</DataType>
-          <GeneratorOptions xsi:type="IntegerGeneratorOptions">
-            <AllowNulls>false</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Increment xsi:type="xsd:int">1</Increment>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>29</SeedValue>
-            <MinValue>100000</MinValue>
-            <MaxValue>10000000</MaxValue>
-            <UseDefault>false</UseDefault>
-            <DefaultValue />
-          </GeneratorOptions>
-          <GeneratorType>SqlIntegerGenerator</GeneratorType>
-          <GeneratorName>int</GeneratorName>
-          <GeneratorDescription>fill with 32-bit signed integer values</GeneratorDescription>
-          <Length>4</Length>
-          <Precision>10</Precision>
-        </Column>
-        <Column Name="TONG_SO_SP_BAN">
-          <Checked>true</Checked>
-          <DataType>int</DataType>
-          <GeneratorOptions xsi:type="IntegerGeneratorOptions">
-            <AllowNulls>true</AllowNulls>
-            <NullProportion>10</NullProportion>
-            <Unique>false</Unique>
-            <IsAlwaysUnique>false</IsAlwaysUnique>
-            <Increment xsi:type="xsd:int">1</Increment>
-            <ValueDistributionMode>Seed</ValueDistributionMode>
-            <SeedValue>30</SeedValue>
-            <MinValue>0</MinValue>
-            <MaxValue>1000</MaxValue>
-            <UseDefault>false</UseDefault>
-            <DefaultValue />
-          </GeneratorOptions>
-          <GeneratorType>SqlIntegerGenerator</GeneratorType>
-          <GeneratorName>int</GeneratorName>
-          <GeneratorDescription>fill with 32-bit signed integer values</GeneratorDescription>
-          <Length>4</Length>
           <Precision>10</Precision>
         </Column>
       </Columns>
@@ -2860,5 +2774,6 @@
     <ExecuteCustomScriptTypeBefore>UseEmbeddedScript</ExecuteCustomScriptTypeBefore>
     <ExecuteCustomScriptTypeAfter>UseEmbeddedScript</ExecuteCustomScriptTypeAfter>
     <BackupPathName>C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\Backup</BackupPathName>
+    <CompareColumnStoreTables>true</CompareColumnStoreTables>
   </SynchronizationOptions>
 </DataGenDocument>
