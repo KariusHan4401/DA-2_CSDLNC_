@@ -1,4 +1,4 @@
-USE QUANLYCONCUNG
+﻿USE QUANLYCONCUNG
 GO
 CREATE OR ALTER 
 PROC uspTimDiaChiCN
@@ -10,6 +10,19 @@ PROC uspTimDiaChiCN
 )
 AS
 BEGIN
+	--Kiểm tra dữ liệu "Quận" có tồn tại trong CSDL
+	IF NOT EXISTS (SELECT QUAN_TP FROM CHI_NHANH WHERE QUAN_TP = @Quan)
+	BEGIN
+		PRINT N'KIỂM TRA LẠI THÔNG TIN'
+		RETURN
+	END
+	--Kiểm tra dữ liệu "Thành phố" có tồn tại trong CSDL
+	IF NOT EXISTS (SELECT TP_TINH FROM CHI_NHANH WHERE TP_TINH = @Tpho)
+	BEGIN
+		PRINT N'KIỂM TRA LẠI THÔNG TIN'
+		RETURN
+	END
+
 	IF @QuanFlag = 1 AND @TPFlag = 0
 	BEGIN
 		SELECT MACN, SO_NHA_DUONG,
@@ -44,13 +57,20 @@ PROC uspTimKH
 )
 AS
 BEGIN
+	--Kiểm tra mã khách hàng có tồn tại không
+	IF NOT EXISTS(SELECT MAKH FROM KHACH_HANG  WHERE MAKH = @IDKH)
+	BEGIN
+		PRINT N'DỮ LIỆU KHÔNG TỒN TẠI'
+		RETURN
+	END
+	
 	SELECT MAKH, TENKH, EMAIL_KH, 			SDT_KH, NGSINH_KH
 	FROM KHACH_HANG
 	WHERE MAKH = @IDKH
 END
 
 
-EXEC uspTimDiaChiCN 1,2,0,N'Kon Tum'
+EXEC uspTimDiaChiCN 1,13,0,N'Kon Tum'
 EXEC uspTimDiaChiCN 1,2,1,N'Kon Tum'
 EXEC uspTimDiaChiCN 0,2,1,N'Kon Tum'
-EXEC uspTimKH 'KH000001'
+EXEC uspTimKH 'BH000001'
