@@ -33,14 +33,14 @@ BEGIN
 	END
 	IF @TPFlag = 1 AND @QuanFlag = 0
 	BEGIN
-		SELECT MACN, SO_NHA_DUONG, 				PHUONG_XA, QUAN_TP, TP_TINH
+		SELECT MACN, SO_NHA_DUONG, PHUONG_XA, QUAN_TP, TP_TINH
 		FROM CHI_NHANH CN 
 		WHERE TP_TINH = @Tpho
 		RETURN
 	END
 	IF @TPFlag = 1 AND @QuanFlag = 1
 	BEGIN
-		SELECT MACN, SO_NHA_DUONG, 				PHUONG_XA, QUAN_TP, TP_TINH
+		SELECT MACN, SO_NHA_DUONG, PHUONG_XA, QUAN_TP, TP_TINH
 		FROM CHI_NHANH CN 
 		WHERE TP_TINH = @Tpho 
 			AND QUAN_TP = @Quan
@@ -64,13 +64,22 @@ BEGIN
 		RETURN
 	END
 	
-	SELECT MAKH, TENKH, EMAIL_KH, 			SDT_KH, NGSINH_KH
+	SELECT MAKH, TENKH, EMAIL_KH,SDT_KH, NGSINH_KH
 	FROM KHACH_HANG
 	WHERE MAKH = @IDKH
 END
 
-
+--Tìm với địa chỉ CN tại Quan_TP: 2
+EXEC uspTimDiaChiCN 1,2,0,N'Kon Tum'
+--Tìm với địa chỉ CN tại Quan_TP: 13
 EXEC uspTimDiaChiCN 1,13,0,N'Kon Tum'
+--Tìm với địa chỉ CN tại Quan_TP: 2, TP_Tinh: KonTum
 EXEC uspTimDiaChiCN 1,2,1,N'Kon Tum'
+--Tìm với địa chỉ CN tại TP_Tinh: KonTum
 EXEC uspTimDiaChiCN 0,2,1,N'Kon Tum'
+--Tìm với địa chỉ CN tại TP_Tinh: Alaska
+EXEC uspTimDiaChiCN 0,2,1,N'Alaska'
+
+--Tìm thông tin khách hàng
 EXEC uspTimKH 'BH000001'
+EXEC uspTimKH 'KH000001'
