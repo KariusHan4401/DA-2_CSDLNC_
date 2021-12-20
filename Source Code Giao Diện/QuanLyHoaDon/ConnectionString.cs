@@ -6,6 +6,6 @@ namespace QuanLyHoaDon
 {
     class ConnectionString
     {
-        public static string connection = @"Data Source=LIN-LIN\SQLEXPRESS;Initial Catalog=QuanLyHoaDon;Integrated Security=True";
+        public static string connection = @"Data Source=LIN-LIN\SQLEXPRESS;Initial Catalog=QUANLYCONCUNG;Integrated Security=True";
     }
 }

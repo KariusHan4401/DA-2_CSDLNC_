@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lephu\\Desktop\\Advanced_SQL\\Đồ án 1\\ADB1_11_DA1\\Source Code Giao Diện\\QuanLyHoaDon\\QuanLyHoaDon.csproj",
+      "projectUniqueName": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\Source Code Giao Diện\\QuanLyHoaDon\\QuanLyHoaDon.csproj",
       "projectName": "QuanLyHoaDon",
-      "projectPath": "C:\\Users\\lephu\\Desktop\\Advanced_SQL\\Đồ án 1\\ADB1_11_DA1\\Source Code Giao Diện\\QuanLyHoaDon\\QuanLyHoaDon.csproj",
+      "projectPath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\Source Code Giao Diện\\QuanLyHoaDon\\QuanLyHoaDon.csproj",
       "packagesPath": "C:\\Users\\lephu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lephu\\Desktop\\Advanced_SQL\\Đồ án 1\\ADB1_11_DA1\\Source Code Giao Diện\\QuanLyHoaDon\\obj\\",
+      "outputPath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\Source Code Giao Diện\\QuanLyHoaDon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lephu\\AppData\\Roaming\\NuGet\\NuGet.Config",

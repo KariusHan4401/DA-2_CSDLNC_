@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w2gfYQSZ0LlEJOosi3LxCOmkIQ1CUaw0QdIMMreZwsEZBhodGwwJ7Pnu3H8WdaYY34A37fduiYZQXxHUWldPcQ==",
+  "dgSpecHash": "FEhr65ok2Rr2bqRRjmohTZLrlPke6vwmBZrlC1RDIZQEs/otqkBZRSMNufWkOSVrXA2CvqSsZ1jqXmsgeazbCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lephu\\Desktop\\Advanced_SQL\\Đồ án 1\\ADB1_11_DA1\\Source Code Giao Diện\\QuanLyHoaDon\\QuanLyHoaDon.csproj",
+  "projectFilePath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\Source Code Giao Diện\\QuanLyHoaDon\\QuanLyHoaDon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lephu\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\lephu\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
