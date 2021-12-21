@@ -94,6 +94,7 @@ namespace QUANLYCONCUNG
             this.lbl_name.TabIndex = 19;
             this.lbl_name.Text = "Dép sục con bò cười";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // panel2
             // 

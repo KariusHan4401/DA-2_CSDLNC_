@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lephu\\source\\repos\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj": {}
+    "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lephu\\source\\repos\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj": {
+    "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lephu\\source\\repos\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
+        "projectUniqueName": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
         "projectName": "QUANLYCONCUNG",
-        "projectPath": "C:\\Users\\lephu\\source\\repos\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
+        "projectPath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
         "packagesPath": "C:\\Users\\lephu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lephu\\source\\repos\\QUANLYCONCUNG\\QUANLYCONCUNG\\obj\\",
+        "outputPath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lephu\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s0LVKf5zntB13MJuGSumWp2QZrMZ8Mx+XGWamzLDSg++MdPMcBdy7WryBwnB2uokV2Py1Py/HMbmabw7X16Gqw==",
+  "dgSpecHash": "GFAC7qnkk66zm6O7VNBWoCLk+qgh/G24NzD5uiDPNtUDEQ2hAF5S1QWIb9CSZIAk3fk7kuhMTXQX3i98BTXCyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lephu\\source\\repos\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
+  "projectFilePath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lephu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\lephu\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
