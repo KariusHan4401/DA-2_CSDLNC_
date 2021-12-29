@@ -92,5 +92,10 @@ namespace QUANLYCONCUNG
         {
             ComboBox_Load();
         }
+
+        private void cbBMATH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

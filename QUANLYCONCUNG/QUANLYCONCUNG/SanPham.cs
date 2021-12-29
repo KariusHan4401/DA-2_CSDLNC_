@@ -47,7 +47,7 @@ namespace QUANLYCONCUNG
         {
             //var products = new List<SanPham>();
             //LoadData("SELECT MASP, TEN_SP, HINH_ANH, LUOT_YEU_THICH, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM");
-            var query = "SELECT MASP, TEN_SP, HINH_ANH, LUOT_YEU_THICH, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM";
+            var query = "SELECT TOP 50 MASP, TEN_SP, HINH_ANH, LUOT_YEU_THICH, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM";
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connection))

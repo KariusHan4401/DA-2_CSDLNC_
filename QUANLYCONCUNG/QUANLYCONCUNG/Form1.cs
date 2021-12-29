@@ -18,7 +18,7 @@ namespace QUANLYCONCUNG
         public Form1()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
+            //this.DoubleBuffered = true;
 
         }
 
@@ -133,6 +133,12 @@ namespace QUANLYCONCUNG
         {
             myFlowLayoutPanel1.Controls.Clear();
             myFlowLayoutPanel1.Controls.Add(new QuanLy());
+        }
+
+        private void btnNangsuat_Click(object sender, EventArgs e)
+        {
+            myFlowLayoutPanel1.Controls.Clear();
+            myFlowLayoutPanel1.Controls.Add(new NangsuatNV());
         }
     }
 }

@@ -164,6 +164,7 @@ namespace QUANLYCONCUNG
             this.cbBMATH.Name = "cbBMATH";
             this.cbBMATH.Size = new System.Drawing.Size(357, 28);
             this.cbBMATH.TabIndex = 16;
+            this.cbBMATH.SelectedIndexChanged += new System.EventHandler(this.cbBMATH_SelectedIndexChanged);
             // 
             // ThemSP
             // 
