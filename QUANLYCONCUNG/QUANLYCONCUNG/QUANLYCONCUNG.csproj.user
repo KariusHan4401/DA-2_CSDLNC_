@@ -4,6 +4,9 @@
     <Compile Update="CapNhatSP.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ChiTietSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

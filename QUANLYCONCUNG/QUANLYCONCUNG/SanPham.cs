@@ -21,6 +21,7 @@ namespace QUANLYCONCUNG
         public int LuotYeuThich { get; set; }
         public int LuotBinhLuan { get; set; }
         public decimal GiaBan { get; set; }
+
         //public static DataSet ds = new DataSet();
         public static DataTable dt = new DataTable();
         void LoadData(string query)
@@ -47,7 +48,7 @@ namespace QUANLYCONCUNG
         {
             //var products = new List<SanPham>();
             //LoadData("SELECT MASP, TEN_SP, HINH_ANH, LUOT_YEU_THICH, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM");
-            var query = "SELECT TOP 50 MASP, TEN_SP, HINH_ANH, LUOT_YEU_THICH, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM";
+            var query = "SELECT TOP 50 MASP, MALH, MATH, TEN_SP, HINH_ANH, LUOT_YEU_THICH, MO_TA, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM";
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connection))
@@ -72,12 +73,15 @@ namespace QUANLYCONCUNG
                         select new SanPham()
                         {
                             MaSP = Convert.ToInt32(dr["MASP"]),
+                            MaTH = Convert.ToInt32(dr["MATH"]),
+                            MaLH = dr["MALH"]== DBNull.Value ? 0 : Convert.ToInt32(dr["MALH"]),
                             TenSP = dr["TEN_SP"].ToString(),
                             HinhAnh = dr["HINH_ANH"].ToString(),
                             //HinhAnh = @"D:\DOWNLOADS\dep.jpg",
                             GiaBan = Convert.ToDecimal(dr["GIA_BAN"]),
                             LuotYeuThich = Convert.ToInt32(dr["LUOT_YEU_THICH"]),
-                            LuotBinhLuan = Convert.ToInt32(dr["LUOT_BINH_LUAN"])
+                            LuotBinhLuan = Convert.ToInt32(dr["LUOT_BINH_LUAN"]),
+                            MoTa = dr["MO_TA"].ToString()
                         }).ToList();
             
             return products;

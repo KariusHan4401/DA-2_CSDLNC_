@@ -32,12 +32,47 @@ namespace QUANLYCONCUNG
 
         }
 
+        public int _maSP;
+        public int _maTH;
+        public int _maLH;
         public string _tenSP;
         public decimal _gia;
         public string _anh;
         public int _yeuThich;
         public int _binhLuan;
+        public string _moTa;
+        public Panel _mainPanel;
 
+        public int MaLH
+        {
+            get { return _maLH; }
+            set { _maLH = value; }
+        }
+
+        public int MaTH
+        {
+            get { return _maTH; }
+            set { _maTH = value; }
+        }
+
+        public string MoTa
+        {
+            get { return _moTa; }
+            set { _moTa = value; }
+        }
+
+        public int MaSP
+        {
+            get { return _maSP; }
+            set { _maSP = value; }
+        }
+
+
+        public Panel MainPanel
+        {
+            get { return _mainPanel; }
+            set { _mainPanel = value; }
+        }
 
 
         public string TenSP
@@ -101,6 +136,17 @@ namespace QUANLYCONCUNG
         }
 
         private void lbl_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pic_product_DoubleClick(object sender, EventArgs e)
+        {
+            _mainPanel.Controls.Clear();
+            _mainPanel.Controls.Add(new ChiTietSanPham(this));
+        }
+
+        private void pic_product_Click(object sender, EventArgs e)
         {
 
         }

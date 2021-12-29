@@ -5781,19 +5781,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lephu\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
+      "projectUniqueName": "D:\\HCMUS\\CSDL_Adv\\DoAn\\ThucHanh\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
       "projectName": "QUANLYCONCUNG",
-      "projectPath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
-      "packagesPath": "C:\\Users\\lephu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lephu\\Desktop\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\obj\\",
+      "projectPath": "D:\\HCMUS\\CSDL_Adv\\DoAn\\ThucHanh\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\QUANLYCONCUNG.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\HCMUS\\CSDL_Adv\\DoAn\\ThucHanh\\DA-2_CSDLNC_\\QUANLYCONCUNG\\QUANLYCONCUNG\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lephu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5846,7 +5846,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -53,11 +53,16 @@ namespace QUANLYCONCUNG
             foreach (var item in data)
             {
                 list[i] = new ProductItem();
+                list[i].MaSP = item.MaSP;
                 list[i].YeuThich = item.LuotYeuThich;
                 list[i].BinhLuan = item.LuotBinhLuan;
                 list[i].HinhAnh = item.HinhAnh;
                 list[i].TenSP = item.TenSP;
                 list[i].GiaBan = item.GiaBan;
+                list[i].MoTa = item.MoTa;
+                list[i].MainPanel = myFlowLayoutPanel1;
+                list[i].MaTH = item.MaTH;
+                list[i].MaLH = item.MaLH;
                 //list[i].LoadImageAsync();
                 itemProducts.Add(list[i]);
                 itemProductsFilter.Add(list[i]);
