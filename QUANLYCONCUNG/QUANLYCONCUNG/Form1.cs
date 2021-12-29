@@ -119,12 +119,20 @@ namespace QUANLYCONCUNG
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
+            myFlowLayoutPanel1.Controls.Clear();
             getItems();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            myFlowLayoutPanel1.Controls.Clear();
+            myFlowLayoutPanel1.Controls.Add(new ThongKeDT());
+        }
 
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            myFlowLayoutPanel1.Controls.Clear();
+            myFlowLayoutPanel1.Controls.Add(new QuanLy());
         }
     }
 }

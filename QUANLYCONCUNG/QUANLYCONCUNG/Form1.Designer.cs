@@ -72,6 +72,7 @@ namespace QUANLYCONCUNG
             this.btnAdmin.TabIndex = 5;
             this.btnAdmin.Text = "Quản lý";
             this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnDoanhThu
             // 

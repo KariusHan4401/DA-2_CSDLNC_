@@ -6,7 +6,7 @@ namespace QUANLYCONCUNG
 {
     class ConnectionString
     {
-        public static string connection = @"Data Source=LIN-LIN\SQLEXPRESS;Initial Catalog=QUANLYCONCUNG;Integrated Security=True";
+        public static string connection = @"Data Source=MSI;Initial Catalog=QUANLYCONCUNG;Integrated Security=True";
 
     }
 }
