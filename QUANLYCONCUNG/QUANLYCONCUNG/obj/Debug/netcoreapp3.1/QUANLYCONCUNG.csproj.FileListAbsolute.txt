@@ -101,7 +101,6 @@ C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\bin\Debug\netcor
 C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.csproj.AssemblyReference.cache
-C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.Form1.resources
 C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.ProductItem.resources
 C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.Properties.Resources.resources
 C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.csproj.GenerateResource.cache
@@ -312,3 +311,8 @@ C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\QUANLYCONCUNG\QUANLYCONCUNG\obj\D
 C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.ThemLH.resources
 C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.XoaLH.resources
 C:\Users\AN515-52\OneDrive - VNU-HCMUS\Desktop\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.CapNhatLH.resources
+C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.CapNhatLH.resources
+C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.ChiTietSanPham.resources
+C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.HomePage.resources
+C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.ThemLH.resources
+C:\Users\lephu\Desktop\DA-2_CSDLNC_\QUANLYCONCUNG\QUANLYCONCUNG\obj\Debug\netcoreapp3.1\QUANLYCONCUNG.XoaLH.resources

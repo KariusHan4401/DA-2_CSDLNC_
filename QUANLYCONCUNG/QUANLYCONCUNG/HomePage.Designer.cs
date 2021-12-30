@@ -72,9 +72,9 @@ namespace QUANLYCONCUNG
             this.btnNangsuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNangsuat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNangsuat.ForeColor = System.Drawing.Color.Transparent;
-            this.btnNangsuat.Location = new System.Drawing.Point(297, 16);
+            this.btnNangsuat.Location = new System.Drawing.Point(297, 13);
             this.btnNangsuat.Name = "btnNangsuat";
-            this.btnNangsuat.Size = new System.Drawing.Size(157, 34);
+            this.btnNangsuat.Size = new System.Drawing.Size(182, 34);
             this.btnNangsuat.TabIndex = 6;
             this.btnNangsuat.Text = "Năng suất nhân viên";
             this.btnNangsuat.UseVisualStyleBackColor = true;
@@ -86,7 +86,7 @@ namespace QUANLYCONCUNG
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdmin.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAdmin.Location = new System.Drawing.Point(451, 13);
+            this.btnAdmin.Location = new System.Drawing.Point(474, 13);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(126, 34);
             this.btnAdmin.TabIndex = 5;
@@ -143,14 +143,14 @@ namespace QUANLYCONCUNG
             this.label1.Text = "Tìm kiếm:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 532);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.myFlowLayoutPanel1);
-            this.Name = "Form1";
+            this.Name = "HomePage";
             this.Text = "Concung";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);

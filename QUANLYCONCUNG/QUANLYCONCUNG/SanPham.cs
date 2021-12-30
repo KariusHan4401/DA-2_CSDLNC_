@@ -48,7 +48,7 @@ namespace QUANLYCONCUNG
         {
             //var products = new List<SanPham>();
             //LoadData("SELECT MASP, TEN_SP, HINH_ANH, LUOT_YEU_THICH, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM");
-            var query = "SELECT TOP 50 MASP, MALH, MATH, TEN_SP, HINH_ANH, LUOT_YEU_THICH, MO_TA, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM";
+            var query = "SELECT TOP 52 MASP, MALH, MATH, TEN_SP, HINH_ANH, LUOT_YEU_THICH, MO_TA, LUOT_BINH_LUAN, GIA_BAN FROM SAN_PHAM";
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connection))
@@ -65,9 +65,7 @@ namespace QUANLYCONCUNG
             {
                 MessageBox.Show(ex.Message);
             }
-            //products.Add(new SanPham() { MaSP = 1, TenSP = "Dép con ong", HinhAnh = "https://product.hstatic.net/1000011840/product/dep-suc-be-gai-d25-xanh1_9d3f547d775741e7af8234006b03d9f3_1024x1024.jpg", GiaBan = 15000 });
             List<SanPham> products = new List<SanPham>();
-            //products.Add(new SanPham() { MaSP = 1, TenSP = "Dép con ong", HinhAnh = "https://product.hstatic.net/1000011840/product/dep-suc-be-gai-d25-xanh1_9d3f547d775741e7af8234006b03d9f3_1024x1024.jpg", GiaBan = 15000 });
 
             products = (from DataRow dr in dt.Rows
                         select new SanPham()
