@@ -29,6 +29,7 @@ namespace QUANLYCONCUNG
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLy));
             this.btnQLSP = new System.Windows.Forms.Button();
             this.panelQL = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,7 +41,10 @@ namespace QUANLYCONCUNG
             this.btnXoaSP = new System.Windows.Forms.Button();
             this.btnThemSP = new System.Windows.Forms.Button();
             this.intro = new System.Windows.Forms.Label();
+            this.pictureBoxCC = new System.Windows.Forms.PictureBox();
+            this.panelQL.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCC)).BeginInit();
             this.SuspendLayout();
             // 
             // btnQLSP
@@ -58,6 +62,7 @@ namespace QUANLYCONCUNG
             // 
             // panelQL
             // 
+            this.panelQL.Controls.Add(this.pictureBoxCC);
             this.panelQL.Location = new System.Drawing.Point(219, 108);
             this.panelQL.Name = "panelQL";
             this.panelQL.Size = new System.Drawing.Size(965, 466);
@@ -180,6 +185,18 @@ namespace QUANLYCONCUNG
             this.intro.TabIndex = 3;
             this.intro.Text = "Danh mục quản lý";
             // 
+            // pictureBoxCC
+            // 
+            this.pictureBoxCC.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCC.Image")));
+            this.pictureBoxCC.InitialImage = null;
+            this.pictureBoxCC.Location = new System.Drawing.Point(30, -162);
+            this.pictureBoxCC.Name = "pictureBoxCC";
+            this.pictureBoxCC.Size = new System.Drawing.Size(765, 668);
+            this.pictureBoxCC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCC.TabIndex = 1;
+            this.pictureBoxCC.TabStop = false;
+            this.pictureBoxCC.Click += new System.EventHandler(this.pictureBoxCC_Click);
+            // 
             // QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -191,7 +208,9 @@ namespace QUANLYCONCUNG
             this.Name = "QuanLy";
             this.Size = new System.Drawing.Size(1184, 574);
             this.Load += new System.EventHandler(this.QuanLy_Load);
+            this.panelQL.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +229,6 @@ namespace QUANLYCONCUNG
         private System.Windows.Forms.Button btnThemLH;
         private System.Windows.Forms.Button btnQLLH;
         private System.Windows.Forms.Label intro;
+        private System.Windows.Forms.PictureBox pictureBoxCC;
     }
 }

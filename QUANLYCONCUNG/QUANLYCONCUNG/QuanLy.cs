@@ -21,6 +21,12 @@ namespace QUANLYCONCUNG
             btnXoaSP.Show();
             btnCapNhatSP.Show();
 
+            btnThemLH.Hide();
+            btnXoaLH.Hide();
+            btnUpdateLH.Hide();
+
+            panelQL.Controls.Clear();
+            panelQL.Controls.Add(new datagridviewXEMSP());
         }
 
         private void QuanLy_Load(object sender, EventArgs e)
@@ -32,6 +38,8 @@ namespace QUANLYCONCUNG
             btnThemLH.Hide();
             btnXoaLH.Hide();
             btnUpdateLH.Hide();
+
+            pictureBoxCC.Show();
         }
 
         private void btnThemSP_Click(object sender, EventArgs e)
@@ -57,6 +65,13 @@ namespace QUANLYCONCUNG
             btnThemLH.Show();
             btnXoaLH.Show();
             btnUpdateLH.Show();
+
+            btnThemSP.Hide();
+            btnXoaSP.Hide();
+            btnCapNhatSP.Hide();
+
+            panelQL.Controls.Clear();
+            panelQL.Controls.Add(new datagridviewXEMLH());
         }
 
         private void btnThemLH_Click(object sender, EventArgs e)
@@ -75,6 +90,11 @@ namespace QUANLYCONCUNG
         {
             panelQL.Controls.Clear();
             panelQL.Controls.Add(new CapNhatLH());
+        }
+
+        private void pictureBoxCC_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
