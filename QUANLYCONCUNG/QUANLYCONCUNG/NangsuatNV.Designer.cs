@@ -70,12 +70,15 @@ namespace QUANLYCONCUNG
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(863, 107);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 29);
             this.button1.TabIndex = 5;
             this.button1.Text = "Tìm theo tên";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // NangsuatNV

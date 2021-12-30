@@ -28,6 +28,10 @@ namespace QUANLYCONCUNG
             btnThemSP.Hide();
             btnXoaSP.Hide();
             btnCapNhatSP.Hide();
+
+            btnThemLH.Hide();
+            btnXoaLH.Hide();
+            btnUpdateLH.Hide();
         }
 
         private void btnThemSP_Click(object sender, EventArgs e)
@@ -46,6 +50,31 @@ namespace QUANLYCONCUNG
         {
             panelQL.Controls.Clear();
             panelQL.Controls.Add(new CapNhatSP());
+        }
+
+        private void btnQLLH_Click(object sender, EventArgs e)
+        {
+            btnThemLH.Show();
+            btnXoaLH.Show();
+            btnUpdateLH.Show();
+        }
+
+        private void btnThemLH_Click(object sender, EventArgs e)
+        {
+            panelQL.Controls.Clear();
+            panelQL.Controls.Add(new ThemLH());
+        }
+
+        private void btnXoaLH_Click(object sender, EventArgs e)
+        {
+            panelQL.Controls.Clear();
+            panelQL.Controls.Add(new XoaLH());
+        }
+
+        private void btnUpdateLH_Click(object sender, EventArgs e)
+        {
+            panelQL.Controls.Clear();
+            panelQL.Controls.Add(new CapNhatLH());
         }
     }
 }

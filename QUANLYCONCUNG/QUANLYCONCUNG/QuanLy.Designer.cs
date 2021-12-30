@@ -32,22 +32,28 @@ namespace QUANLYCONCUNG
             this.btnQLSP = new System.Windows.Forms.Button();
             this.panelQL = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUpdateLH = new System.Windows.Forms.Button();
+            this.btnXoaLH = new System.Windows.Forms.Button();
+            this.btnThemLH = new System.Windows.Forms.Button();
+            this.btnQLLH = new System.Windows.Forms.Button();
             this.btnCapNhatSP = new System.Windows.Forms.Button();
             this.btnXoaSP = new System.Windows.Forms.Button();
             this.btnThemSP = new System.Windows.Forms.Button();
+            this.intro = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnQLSP
             // 
+            this.btnQLSP.BackColor = System.Drawing.Color.White;
             this.btnQLSP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnQLSP.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnQLSP.Location = new System.Drawing.Point(3, 18);
+            this.btnQLSP.Location = new System.Drawing.Point(10, 18);
             this.btnQLSP.Name = "btnQLSP";
             this.btnQLSP.Size = new System.Drawing.Size(192, 56);
             this.btnQLSP.TabIndex = 0;
             this.btnQLSP.Text = "Quản lý sản phẩm";
-            this.btnQLSP.UseVisualStyleBackColor = true;
+            this.btnQLSP.UseVisualStyleBackColor = false;
             this.btnQLSP.Click += new System.EventHandler(this.btnQLSP_Click);
             // 
             // panelQL
@@ -59,6 +65,10 @@ namespace QUANLYCONCUNG
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnUpdateLH);
+            this.panel1.Controls.Add(this.btnXoaLH);
+            this.panel1.Controls.Add(this.btnThemLH);
+            this.panel1.Controls.Add(this.btnQLLH);
             this.panel1.Controls.Add(this.btnCapNhatSP);
             this.panel1.Controls.Add(this.btnXoaSP);
             this.panel1.Controls.Add(this.btnThemSP);
@@ -68,9 +78,61 @@ namespace QUANLYCONCUNG
             this.panel1.Size = new System.Drawing.Size(210, 466);
             this.panel1.TabIndex = 2;
             // 
+            // btnUpdateLH
+            // 
+            this.btnUpdateLH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnUpdateLH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateLH.Location = new System.Drawing.Point(23, 348);
+            this.btnUpdateLH.Name = "btnUpdateLH";
+            this.btnUpdateLH.Size = new System.Drawing.Size(172, 31);
+            this.btnUpdateLH.TabIndex = 10;
+            this.btnUpdateLH.Text = "Cập nhật loại hàng";
+            this.btnUpdateLH.UseVisualStyleBackColor = false;
+            this.btnUpdateLH.Click += new System.EventHandler(this.btnUpdateLH_Click);
+            // 
+            // btnXoaLH
+            // 
+            this.btnXoaLH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnXoaLH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnXoaLH.Location = new System.Drawing.Point(23, 309);
+            this.btnXoaLH.Name = "btnXoaLH";
+            this.btnXoaLH.Size = new System.Drawing.Size(172, 33);
+            this.btnXoaLH.TabIndex = 9;
+            this.btnXoaLH.Text = "Xóa loại hàng";
+            this.btnXoaLH.UseVisualStyleBackColor = false;
+            this.btnXoaLH.Click += new System.EventHandler(this.btnXoaLH_Click);
+            // 
+            // btnThemLH
+            // 
+            this.btnThemLH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnThemLH.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnThemLH.FlatAppearance.BorderSize = 0;
+            this.btnThemLH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThemLH.Location = new System.Drawing.Point(23, 267);
+            this.btnThemLH.Name = "btnThemLH";
+            this.btnThemLH.Size = new System.Drawing.Size(172, 36);
+            this.btnThemLH.TabIndex = 8;
+            this.btnThemLH.Text = "Thêm loại hàng";
+            this.btnThemLH.UseVisualStyleBackColor = false;
+            this.btnThemLH.Click += new System.EventHandler(this.btnThemLH_Click);
+            // 
+            // btnQLLH
+            // 
+            this.btnQLLH.BackColor = System.Drawing.Color.White;
+            this.btnQLLH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQLLH.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnQLLH.Location = new System.Drawing.Point(9, 205);
+            this.btnQLLH.Name = "btnQLLH";
+            this.btnQLLH.Size = new System.Drawing.Size(192, 56);
+            this.btnQLLH.TabIndex = 7;
+            this.btnQLLH.Text = "Quản lý loại hàng";
+            this.btnQLLH.UseVisualStyleBackColor = false;
+            this.btnQLLH.Click += new System.EventHandler(this.btnQLLH_Click);
+            // 
             // btnCapNhatSP
             // 
             this.btnCapNhatSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnCapNhatSP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCapNhatSP.Location = new System.Drawing.Point(23, 161);
             this.btnCapNhatSP.Name = "btnCapNhatSP";
             this.btnCapNhatSP.Size = new System.Drawing.Size(172, 31);
@@ -82,6 +144,8 @@ namespace QUANLYCONCUNG
             // btnXoaSP
             // 
             this.btnXoaSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnXoaSP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnXoaSP.ForeColor = System.Drawing.Color.Black;
             this.btnXoaSP.Location = new System.Drawing.Point(23, 122);
             this.btnXoaSP.Name = "btnXoaSP";
             this.btnXoaSP.Size = new System.Drawing.Size(172, 33);
@@ -95,6 +159,8 @@ namespace QUANLYCONCUNG
             this.btnThemSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThemSP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThemSP.FlatAppearance.BorderSize = 0;
+            this.btnThemSP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThemSP.ForeColor = System.Drawing.Color.Black;
             this.btnThemSP.Location = new System.Drawing.Point(23, 80);
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.Size = new System.Drawing.Size(172, 36);
@@ -103,11 +169,23 @@ namespace QUANLYCONCUNG
             this.btnThemSP.UseVisualStyleBackColor = false;
             this.btnThemSP.Click += new System.EventHandler(this.btnThemSP_Click);
             // 
+            // intro
+            // 
+            this.intro.AutoSize = true;
+            this.intro.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.intro.ForeColor = System.Drawing.Color.Transparent;
+            this.intro.Location = new System.Drawing.Point(385, 50);
+            this.intro.Name = "intro";
+            this.intro.Size = new System.Drawing.Size(391, 59);
+            this.intro.TabIndex = 3;
+            this.intro.Text = "Danh mục quản lý";
+            // 
             // QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.intro);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelQL);
             this.Name = "QuanLy";
@@ -115,6 +193,7 @@ namespace QUANLYCONCUNG
             this.Load += new System.EventHandler(this.QuanLy_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -126,5 +205,10 @@ namespace QUANLYCONCUNG
         private System.Windows.Forms.Button btnCapNhatSP;
         private System.Windows.Forms.Button btnXoaSP;
         private System.Windows.Forms.Button btnThemSP;
+        private System.Windows.Forms.Button btnUpdateLH;
+        private System.Windows.Forms.Button btnXoaLH;
+        private System.Windows.Forms.Button btnThemLH;
+        private System.Windows.Forms.Button btnQLLH;
+        private System.Windows.Forms.Label intro;
     }
 }

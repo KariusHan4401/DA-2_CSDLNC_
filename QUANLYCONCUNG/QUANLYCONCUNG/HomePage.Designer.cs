@@ -1,7 +1,7 @@
 ﻿
 namespace QUANLYCONCUNG
 {
-    partial class Form1
+    partial class HomePage
     {
         /// <summary>
         ///  Required designer variable.
@@ -70,7 +70,9 @@ namespace QUANLYCONCUNG
             // 
             this.btnNangsuat.FlatAppearance.BorderSize = 0;
             this.btnNangsuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNangsuat.Location = new System.Drawing.Point(297, 13);
+            this.btnNangsuat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNangsuat.ForeColor = System.Drawing.Color.Transparent;
+            this.btnNangsuat.Location = new System.Drawing.Point(297, 16);
             this.btnNangsuat.Name = "btnNangsuat";
             this.btnNangsuat.Size = new System.Drawing.Size(157, 34);
             this.btnNangsuat.TabIndex = 6;
@@ -82,6 +84,8 @@ namespace QUANLYCONCUNG
             // 
             this.btnAdmin.FlatAppearance.BorderSize = 0;
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAdmin.ForeColor = System.Drawing.Color.Transparent;
             this.btnAdmin.Location = new System.Drawing.Point(451, 13);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(126, 34);
@@ -94,6 +98,8 @@ namespace QUANLYCONCUNG
             // 
             this.btnDoanhThu.FlatAppearance.BorderSize = 0;
             this.btnDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoanhThu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDoanhThu.ForeColor = System.Drawing.Color.Transparent;
             this.btnDoanhThu.Location = new System.Drawing.Point(161, 13);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.Size = new System.Drawing.Size(126, 34);
@@ -106,6 +112,8 @@ namespace QUANLYCONCUNG
             // 
             this.btnLoad.FlatAppearance.BorderSize = 0;
             this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLoad.ForeColor = System.Drawing.Color.Transparent;
             this.btnLoad.Location = new System.Drawing.Point(30, 14);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(140, 32);
@@ -126,9 +134,11 @@ namespace QUANLYCONCUNG
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(713, 20);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(707, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
+            this.label1.Size = new System.Drawing.Size(78, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tìm kiếm:";
             this.label1.Click += new System.EventHandler(this.label1_Click);

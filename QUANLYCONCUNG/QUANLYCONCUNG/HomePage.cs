@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace QUANLYCONCUNG
 {
-    public partial class Form1 : Form
+    public partial class HomePage : Form
     {
         public List<ProductItem> itemProducts;
         public List<ProductItem> itemProductsFilter;
 
-        public Form1()
+        public HomePage()
         {
             InitializeComponent();
             //this.DoubleBuffered = true;
