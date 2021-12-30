@@ -18,7 +18,7 @@ namespace QUANLYCONCUNG
             InitializeComponent();
             NameField.Text = item._tenSP;
             priceLabel.Text = item._gia.ToString() + "đ";
-            brandLabel.Text = getBrand(item._maTH);
+            brandLabel.Text = "ThuongHieu: "+getBrand(item._maTH);
             productPicture.ImageLocation = item._anh;
             typeLabel.Text = getProductType(item._maLH);
             pdIdLabel.Text = "MSP: " + item._maSP.ToString();
