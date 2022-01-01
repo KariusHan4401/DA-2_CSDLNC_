@@ -32,6 +32,7 @@ namespace QUANLYCONCUNG
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLy));
             this.btnQLSP = new System.Windows.Forms.Button();
             this.panelQL = new System.Windows.Forms.Panel();
+            this.pictureBoxCC = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUpdateLH = new System.Windows.Forms.Button();
             this.btnXoaLH = new System.Windows.Forms.Button();
@@ -41,10 +42,9 @@ namespace QUANLYCONCUNG
             this.btnXoaSP = new System.Windows.Forms.Button();
             this.btnThemSP = new System.Windows.Forms.Button();
             this.intro = new System.Windows.Forms.Label();
-            this.pictureBoxCC = new System.Windows.Forms.PictureBox();
             this.panelQL.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCC)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnQLSP
@@ -63,10 +63,22 @@ namespace QUANLYCONCUNG
             // panelQL
             // 
             this.panelQL.Controls.Add(this.pictureBoxCC);
-            this.panelQL.Location = new System.Drawing.Point(219, 108);
+            this.panelQL.Location = new System.Drawing.Point(219, 167);
             this.panelQL.Name = "panelQL";
             this.panelQL.Size = new System.Drawing.Size(965, 466);
             this.panelQL.TabIndex = 1;
+            // 
+            // pictureBoxCC
+            // 
+            this.pictureBoxCC.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCC.Image")));
+            this.pictureBoxCC.InitialImage = null;
+            this.pictureBoxCC.Location = new System.Drawing.Point(30, -162);
+            this.pictureBoxCC.Name = "pictureBoxCC";
+            this.pictureBoxCC.Size = new System.Drawing.Size(765, 668);
+            this.pictureBoxCC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCC.TabIndex = 1;
+            this.pictureBoxCC.TabStop = false;
+            this.pictureBoxCC.Click += new System.EventHandler(this.pictureBoxCC_Click);
             // 
             // panel1
             // 
@@ -78,7 +90,7 @@ namespace QUANLYCONCUNG
             this.panel1.Controls.Add(this.btnXoaSP);
             this.panel1.Controls.Add(this.btnThemSP);
             this.panel1.Controls.Add(this.btnQLSP);
-            this.panel1.Location = new System.Drawing.Point(3, 108);
+            this.panel1.Location = new System.Drawing.Point(3, 167);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 466);
             this.panel1.TabIndex = 2;
@@ -185,18 +197,6 @@ namespace QUANLYCONCUNG
             this.intro.TabIndex = 3;
             this.intro.Text = "Danh mục quản lý";
             // 
-            // pictureBoxCC
-            // 
-            this.pictureBoxCC.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCC.Image")));
-            this.pictureBoxCC.InitialImage = null;
-            this.pictureBoxCC.Location = new System.Drawing.Point(30, -162);
-            this.pictureBoxCC.Name = "pictureBoxCC";
-            this.pictureBoxCC.Size = new System.Drawing.Size(765, 668);
-            this.pictureBoxCC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxCC.TabIndex = 1;
-            this.pictureBoxCC.TabStop = false;
-            this.pictureBoxCC.Click += new System.EventHandler(this.pictureBoxCC_Click);
-            // 
             // QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -206,11 +206,11 @@ namespace QUANLYCONCUNG
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelQL);
             this.Name = "QuanLy";
-            this.Size = new System.Drawing.Size(1184, 574);
+            this.Size = new System.Drawing.Size(1184, 753);
             this.Load += new System.EventHandler(this.QuanLy_Load);
             this.panelQL.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCC)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

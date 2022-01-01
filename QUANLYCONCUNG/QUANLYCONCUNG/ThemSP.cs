@@ -17,6 +17,30 @@ namespace QUANLYCONCUNG
             InitializeComponent();
         }
 
+        void Data_Load()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString.connection))
+                {
+                    connection.Open();
+                    var query = "SELECT * FROM SAN_PHAM WHERE MASP = (SELECT max(MASP) FROM SAN_PHAM);";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    SqlDataAdapter data = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    data.Fill(dt);
+                    dataGridViewSPMOI.DataSource = dt;
+                    dataGridViewSPMOI.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                    connection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void ComboBox_Load()
         {
             try
@@ -70,6 +94,8 @@ namespace QUANLYCONCUNG
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Thêm sản phẩm thành công!");
+
+                    Data_Load();
 
                     connection.Close();
                 }

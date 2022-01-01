@@ -17,6 +17,29 @@ namespace QUANLYCONCUNG
             InitializeComponent();
         }
 
+        void Data_Load()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString.connection))
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM SAN_PHAM WHERE MASP = '" + txtMaSP.Text + "'";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    SqlDataAdapter data = new SqlDataAdapter(cmd);
+                    DataTable dataTable = new DataTable();
+                    data.Fill(dataTable);
+                    dataGridViewSP.DataSource = dataTable;
+                    dataGridViewSP.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    connection.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void ComboBox_Load()
         {
             try
@@ -59,25 +82,7 @@ namespace QUANLYCONCUNG
                 return;
             }
 
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(ConnectionString.connection))
-                {
-                    connection.Open();
-                    string query = "SELECT * FROM SAN_PHAM WHERE MASP = '" + txtMaSP.Text + "'";
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    SqlDataAdapter data = new SqlDataAdapter(cmd);
-                    DataTable dataTable = new DataTable();
-                    data.Fill(dataTable);
-                    dataGridViewSP.DataSource = dataTable;
-                    dataGridViewSP.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                    connection.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            Data_Load();
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -103,7 +108,7 @@ namespace QUANLYCONCUNG
                         count += 1;
                     }
 
-                    if (cbBMALH.Text != "")
+                    if (cbBMALH.Text != "-1")
                     {
                         if (count != 0)
                             query += "', MALH = N'" + cbBMALH.Text;
@@ -112,7 +117,7 @@ namespace QUANLYCONCUNG
                         count += 1;
                     }
 
-                    if (cbBMATH.Text != "")
+                    if (cbBMATH.Text != "-1")
                     {
                         if (count != 0)
                             query += "', MATH = '" + cbBMATH.Text;
@@ -156,6 +161,8 @@ namespace QUANLYCONCUNG
                         cmd.ExecuteNonQuery();
 
                         MessageBox.Show("Cập nhật thông tin thành công!");
+
+                        Data_Load();
                     }
 
                     connection.Close();
@@ -170,13 +177,15 @@ namespace QUANLYCONCUNG
             txtMoTa.Clear();
             txtHA.Clear();
             txtGia.Clear();
-            cbBMALH.Text = "1";
-            cbBMATH.Text = "1";
+            cbBMALH.Text = "-1";
+            cbBMATH.Text = "-1";
         }
 
         private void CapNhatSP_Load(object sender, EventArgs e)
         {
             ComboBox_Load();
+            cbBMALH.Text = "-1";
+            cbBMATH.Text = "-1";
         }
     }
 }

@@ -50,11 +50,11 @@ namespace QUANLYCONCUNG
             // 
             this.dataGridViewDTCN.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridViewDTCN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDTCN.Location = new System.Drawing.Point(354, 228);
+            this.dataGridViewDTCN.Location = new System.Drawing.Point(375, 246);
             this.dataGridViewDTCN.Name = "dataGridViewDTCN";
             this.dataGridViewDTCN.RowHeadersWidth = 51;
             this.dataGridViewDTCN.RowTemplate.Height = 29;
-            this.dataGridViewDTCN.Size = new System.Drawing.Size(514, 141);
+            this.dataGridViewDTCN.Size = new System.Drawing.Size(514, 160);
             this.dataGridViewDTCN.TabIndex = 0;
             this.dataGridViewDTCN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -158,7 +158,7 @@ namespace QUANLYCONCUNG
             // 
             this.dataGridViewDTTong.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridViewDTTong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDTTong.Location = new System.Drawing.Point(354, 395);
+            this.dataGridViewDTTong.Location = new System.Drawing.Point(375, 426);
             this.dataGridViewDTTong.Name = "dataGridViewDTTong";
             this.dataGridViewDTTong.RowHeadersWidth = 51;
             this.dataGridViewDTTong.RowTemplate.Height = 29;
@@ -170,18 +170,19 @@ namespace QUANLYCONCUNG
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(123, 284);
+            this.label4.Location = new System.Drawing.Point(144, 309);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(216, 28);
             this.label4.TabIndex = 11;
             this.label4.Text = "Doanh thu chi nhánh:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(172, 419);
+            this.label5.Location = new System.Drawing.Point(193, 481);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(167, 28);
             this.label5.TabIndex = 12;
@@ -207,7 +208,7 @@ namespace QUANLYCONCUNG
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewDTCN);
             this.Name = "ThongKeDT";
-            this.Size = new System.Drawing.Size(1263, 662);
+            this.Size = new System.Drawing.Size(1263, 719);
             this.Load += new System.EventHandler(this.ThongKeDT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDTCN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDTTong)).EndInit();

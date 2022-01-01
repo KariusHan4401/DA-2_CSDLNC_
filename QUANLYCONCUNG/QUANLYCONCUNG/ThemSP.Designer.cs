@@ -42,6 +42,8 @@ namespace QUANLYCONCUNG
             this.btnThemSP = new System.Windows.Forms.Button();
             this.cbBMALH = new System.Windows.Forms.ComboBox();
             this.cbBMATH = new System.Windows.Forms.ComboBox();
+            this.dataGridViewSPMOI = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSPMOI)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,11 +173,23 @@ namespace QUANLYCONCUNG
             this.cbBMATH.TabIndex = 16;
             this.cbBMATH.SelectedIndexChanged += new System.EventHandler(this.cbBMATH_SelectedIndexChanged);
             // 
+            // dataGridViewSPMOI
+            // 
+            this.dataGridViewSPMOI.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewSPMOI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSPMOI.Location = new System.Drawing.Point(40, 401);
+            this.dataGridViewSPMOI.Name = "dataGridViewSPMOI";
+            this.dataGridViewSPMOI.RowHeadersWidth = 51;
+            this.dataGridViewSPMOI.RowTemplate.Height = 29;
+            this.dataGridViewSPMOI.Size = new System.Drawing.Size(718, 77);
+            this.dataGridViewSPMOI.TabIndex = 17;
+            // 
             // ThemSP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.dataGridViewSPMOI);
             this.Controls.Add(this.cbBMATH);
             this.Controls.Add(this.cbBMALH);
             this.Controls.Add(this.btnThemSP);
@@ -192,6 +206,7 @@ namespace QUANLYCONCUNG
             this.Name = "ThemSP";
             this.Size = new System.Drawing.Size(1151, 614);
             this.Load += new System.EventHandler(this.ThemSP_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSPMOI)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +227,6 @@ namespace QUANLYCONCUNG
         private System.Windows.Forms.Button btnThemSP;
         private System.Windows.Forms.ComboBox cbBMALH;
         private System.Windows.Forms.ComboBox cbBMATH;
+        private System.Windows.Forms.DataGridView dataGridViewSPMOI;
     }
 }

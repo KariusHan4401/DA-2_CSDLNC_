@@ -17,14 +17,8 @@ namespace QUANLYCONCUNG
             InitializeComponent();
         }
 
-        private void btnCheck_Click(object sender, EventArgs e)
+        void Data_Load()
         {
-            if (txtMaSP.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập mã sản phẩm!");
-                return;
-            }
-
             try
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connection))
@@ -43,6 +37,17 @@ namespace QUANLYCONCUNG
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            if (txtMaSP.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập mã sản phẩm!");
+                return;
+            }
+
+            Data_Load();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -85,8 +90,7 @@ namespace QUANLYCONCUNG
                 MessageBox.Show(ex.Message);
             }
 
-            txtMaSP.Clear();
-            dataGridViewSP.ClearSelection();
+            Data_Load();
         }
     }
 }
