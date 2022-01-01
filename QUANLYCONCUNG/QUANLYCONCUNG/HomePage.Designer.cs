@@ -45,11 +45,11 @@ namespace QUANLYCONCUNG
             this.myFlowLayoutPanel1.AutoScroll = true;
             this.myFlowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.myFlowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.myFlowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.myFlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.myFlowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.myFlowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.myFlowLayoutPanel1.Name = "myFlowLayoutPanel1";
-            this.myFlowLayoutPanel1.Size = new System.Drawing.Size(935, 399);
+            this.myFlowLayoutPanel1.Size = new System.Drawing.Size(1069, 753);
             this.myFlowLayoutPanel1.TabIndex = 1;
             // 
             // panel2
@@ -62,9 +62,8 @@ namespace QUANLYCONCUNG
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1680, 45);
+            this.panel2.Size = new System.Drawing.Size(1920, 60);
             this.panel2.TabIndex = 14;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -74,10 +73,9 @@ namespace QUANLYCONCUNG
             this.btnNangsuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNangsuat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNangsuat.ForeColor = System.Drawing.Color.Transparent;
-            this.btnNangsuat.Location = new System.Drawing.Point(260, 10);
-            this.btnNangsuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNangsuat.Location = new System.Drawing.Point(297, 13);
             this.btnNangsuat.Name = "btnNangsuat";
-            this.btnNangsuat.Size = new System.Drawing.Size(159, 26);
+            this.btnNangsuat.Size = new System.Drawing.Size(182, 35);
             this.btnNangsuat.TabIndex = 6;
             this.btnNangsuat.Text = "Năng suất nhân viên";
             this.btnNangsuat.UseVisualStyleBackColor = true;
@@ -89,10 +87,9 @@ namespace QUANLYCONCUNG
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdmin.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAdmin.Location = new System.Drawing.Point(415, 10);
-            this.btnAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdmin.Location = new System.Drawing.Point(474, 13);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(110, 26);
+            this.btnAdmin.Size = new System.Drawing.Size(126, 35);
             this.btnAdmin.TabIndex = 5;
             this.btnAdmin.Text = "Quản lý";
             this.btnAdmin.UseVisualStyleBackColor = true;
@@ -104,10 +101,9 @@ namespace QUANLYCONCUNG
             this.btnDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDoanhThu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDoanhThu.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDoanhThu.Location = new System.Drawing.Point(141, 10);
-            this.btnDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDoanhThu.Location = new System.Drawing.Point(161, 13);
             this.btnDoanhThu.Name = "btnDoanhThu";
-            this.btnDoanhThu.Size = new System.Drawing.Size(110, 26);
+            this.btnDoanhThu.Size = new System.Drawing.Size(126, 35);
             this.btnDoanhThu.TabIndex = 4;
             this.btnDoanhThu.Text = "Xem doanh thu";
             this.btnDoanhThu.UseVisualStyleBackColor = true;
@@ -119,10 +115,9 @@ namespace QUANLYCONCUNG
             this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoad.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLoad.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLoad.Location = new System.Drawing.Point(26, 10);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLoad.Location = new System.Drawing.Point(30, 13);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(122, 24);
+            this.btnLoad.Size = new System.Drawing.Size(139, 32);
             this.btnLoad.TabIndex = 3;
             this.btnLoad.Text = "Trang chủ";
             this.btnLoad.UseVisualStyleBackColor = true;
@@ -131,10 +126,9 @@ namespace QUANLYCONCUNG
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSearch.Location = new System.Drawing.Point(693, 13);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearch.Location = new System.Drawing.Point(792, 17);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(210, 23);
+            this.txtSearch.Size = new System.Drawing.Size(239, 27);
             this.txtSearch.TabIndex = 2;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -143,22 +137,21 @@ namespace QUANLYCONCUNG
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(619, 16);
+            this.label1.Location = new System.Drawing.Point(707, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 15);
+            this.label1.Size = new System.Drawing.Size(78, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tìm kiếm:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // HomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 399);
+            this.ClientSize = new System.Drawing.Size(1069, 753);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.myFlowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Concung";

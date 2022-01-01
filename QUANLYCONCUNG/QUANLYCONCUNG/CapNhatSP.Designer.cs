@@ -193,7 +193,9 @@ namespace QUANLYCONCUNG
             // 
             // cbBMALH
             // 
+            this.cbBMALH.DropDownHeight = 100;
             this.cbBMALH.FormattingEnabled = true;
+            this.cbBMALH.IntegralHeight = false;
             this.cbBMALH.Location = new System.Drawing.Point(182, 244);
             this.cbBMALH.Name = "cbBMALH";
             this.cbBMALH.Size = new System.Drawing.Size(212, 28);
@@ -201,7 +203,9 @@ namespace QUANLYCONCUNG
             // 
             // cbBMATH
             // 
+            this.cbBMATH.DropDownHeight = 100;
             this.cbBMATH.FormattingEnabled = true;
+            this.cbBMATH.IntegralHeight = false;
             this.cbBMATH.Location = new System.Drawing.Point(182, 292);
             this.cbBMATH.Name = "cbBMATH";
             this.cbBMATH.Size = new System.Drawing.Size(212, 28);

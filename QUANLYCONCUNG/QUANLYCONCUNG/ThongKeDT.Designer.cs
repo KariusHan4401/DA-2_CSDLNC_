@@ -93,12 +93,12 @@ namespace QUANLYCONCUNG
             // 
             this.dateTimePicker.CustomFormat = "MM - yyyy";
             this.dateTimePicker.Location = new System.Drawing.Point(417, 78);
-            this.dateTimePicker.MaxDate = new System.DateTime(System.DateTime.Now.Year, System.DateTime.Now.Month, System.DateTime.Now.Day, 0, 0, 0, 0);
+            this.dateTimePicker.MaxDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(318, 27);
             this.dateTimePicker.TabIndex = 4;
-            this.dateTimePicker.Value = new System.DateTime(System.DateTime.Now.Year, System.DateTime.Now.Month, System.DateTime.Now.Day, 0, 0, 0, 0);
+            this.dateTimePicker.Value = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // txtNAM1
@@ -162,7 +162,7 @@ namespace QUANLYCONCUNG
             this.dataGridViewDTTong.Name = "dataGridViewDTTong";
             this.dataGridViewDTTong.RowHeadersWidth = 51;
             this.dataGridViewDTTong.RowTemplate.Height = 29;
-            this.dataGridViewDTTong.Size = new System.Drawing.Size(514, 81);
+            this.dataGridViewDTTong.Size = new System.Drawing.Size(514, 147);
             this.dataGridViewDTTong.TabIndex = 10;
             // 
             // label4

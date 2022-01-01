@@ -23,7 +23,7 @@ namespace QUANLYCONCUNG
                 using (SqlConnection connection = new SqlConnection(ConnectionString.connection))
                 {
                     connection.Open();
-                    var query = "SELECT * FROM SAN_PHAM";
+                    var query = "SELECT TOP 100 * FROM SAN_PHAM";
                     SqlCommand cmd = new SqlCommand(query, connection);
                     SqlDataAdapter data = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();

@@ -40,9 +40,9 @@ namespace QUANLYCONCUNG
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(109, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 28);
+            this.label1.Size = new System.Drawing.Size(169, 28);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Tất cả sản phẩm:";
+            this.label1.Text = "Tất cả loại hàng:";
             // 
             // dataGridViewLH
             // 

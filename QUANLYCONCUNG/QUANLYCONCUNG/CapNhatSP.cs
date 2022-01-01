@@ -150,7 +150,7 @@ namespace QUANLYCONCUNG
 
                     if (count != 0)
                     {
-                        query += "'";
+                        query += "' WHERE MASP = " + txtMaSP.Text;
 
                         SqlCommand cmd = new SqlCommand(query, connection);
                         cmd.ExecuteNonQuery();
