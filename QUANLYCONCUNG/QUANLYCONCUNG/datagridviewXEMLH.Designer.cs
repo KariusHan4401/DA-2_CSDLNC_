@@ -38,7 +38,7 @@ namespace QUANLYCONCUNG
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(39, 13);
+            this.label1.Location = new System.Drawing.Point(109, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 28);
             this.label1.TabIndex = 3;
@@ -48,7 +48,7 @@ namespace QUANLYCONCUNG
             // 
             this.dataGridViewLH.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewLH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLH.Location = new System.Drawing.Point(39, 44);
+            this.dataGridViewLH.Location = new System.Drawing.Point(109, 44);
             this.dataGridViewLH.Name = "dataGridViewLH";
             this.dataGridViewLH.RowHeadersWidth = 51;
             this.dataGridViewLH.RowTemplate.Height = 29;
