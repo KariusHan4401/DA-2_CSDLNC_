@@ -1,8 +1,0 @@
-COD
-ATM
-VNPAY-QR
-VISA
-MASTERCARD
-JCB
-ZaloPay
-Momo
